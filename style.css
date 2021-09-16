@@ -36,6 +36,9 @@ header {
   padding: 20px;
   text-align: center;
 }
+.wait {
+  font-size: 3rem;
+}
 h1 {
   width: 100%;
   font-family: Roboto;
@@ -56,6 +59,13 @@ img {
   width: 100%;
   box-sizing: border-box;
   margin: auto;
+}
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
 }
 .container-today {
   display: flex;
