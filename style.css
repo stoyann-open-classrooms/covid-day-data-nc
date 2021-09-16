@@ -1,0 +1,17 @@
+.situation {
+  background-color: grey;
+  padding: 20px;
+  margin-top: 3rem;
+  color: aliceblue;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  margin: 1rem 0;
+}
