@@ -1,3 +1,60 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.container-global {
+  margin: 3% 3%;
+}
+a {
+  font-weight: 600;
+}
+li {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  width: 100%;
+  font-family: Roboto;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  line-height: 3rem;
+}
+h2 {
+  font-size: 1.3rem;
+  line-height: 3rem;
+}
+img {
+  height: auto;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+}
 .situation {
   background-color: grey;
   padding: 20px;
@@ -14,4 +71,12 @@
 
 .btn {
   margin: 1rem 0;
+}
+.cadre {
+  background-color: blue;
+  margin-top: 1rem;
+  border-radius: 5px;
+  width: 200px;
+  padding: 1rem;
+  font-size: 2rem;
 }
