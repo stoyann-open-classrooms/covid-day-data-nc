@@ -8,6 +8,8 @@
     <title>Infos COVID NC</title>
     <link rel=" shortcut icon" href="./fav.png" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/6edb39c88a.js" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -26,60 +28,78 @@
         <main>
             <div class="situation-data">
                 <div class="situation today">
-                    <h3>Evolution de la situation sannitaire du 16/09/2021</h3>
+                    <h3>Evolution de la situation sannitaire <audio src=""></audio> 16/09/2021</h3>
                     <div class="container-today">
-                        <div class=" cadre today-positive-cas">+ 1174</div>
-                        <div class="cadre today-death">+ 3</div>
-                        <div class="cadre today-rea">+ 27</div>
-                        <div class="cadre today-hosp">+ 161</div>
-                        <div class="cadre today-hot">+ 80</div>
-                    </div>
-                </div>
-                <div class="situation general">
-                    <h3>Evolution de la situation sannitaire depuis le 09/09/2021</h3>
-                    <div class="container-general">
-                        <div class="cadre general-positive-cas">+ 2386</div>
-                        <div class="cadre general-death">+ 7</div>
+                        <div class=" cadre today-positive-cas">
+                            <div><i class="fas fa-vial"></i>NOUVEAUX CAS POSITIFS</div>
+                            <p class="nb danger">+ 1174</p>
+                        </div>
+                        <div class="cadre today-death">
+                            <div><i class="fas fa-sad-tear"></i>décès</div>
+                            <p class="nb danger">+ 3</p>
+                        </div>
+                        <div class="cadre today-rea">
+                            <div><i class="fas fa-procedures"></i>Personnes en Réanimation</div>
+                            <p class="nb danger">+ 27</p>
+
+                        </div>
+                        <div class="cadre today-hosp">
+                            <div><i class="fas fa-hospital"></i>Personnes Hospitalisé</div>
+                            <p class="nb danger">+ 161</p>
+                        </div>
 
                     </div>
-                </div>
-                <div class="situation hostel-capacity">
-                    <h3>Capacité acceuil Hotel</h3>
-                    <div class="hotel-capacity-container">
-                        <div class="cadre capacity-prov-sud">470</div>
-                        <div class="cadre capacity-prov-north">94</div>
-                        <div class="cadre capacity-prov-island">122</div>
-
-                    </div>
-                </div>
-                <div class="situation vaccination">
-                    <h3>Vaccination</h3>
-                    <div class="vaccine-container">
-                        <div class="cadre first-dose">50.53%</div>
-                        <div class="cadre second-dose">33.75%</div>
-
-                    </div>
-                </div>
-                <div class="situation confinement">
-                    <h3>Confinement</h3>
-                    <div class="confine-container">
-                        <div class="cadre controles">40 0000</div>
-                        <div class="cadre verbalisation">60%</div>
-                        <div class="cadre sanctions"> 40 contrôles avec 40 verbalisations*</div>
-                        <div class=" ammend"> Amendes : 15 000, 179 000 et 447 500frs</div>
-                        <div class=" confin-time">Prolongement du confinement encore en
-                            cours d’études...</div>
-
+                    <div class="cadre today-hot">
+                        <div><i class="fas fa-hotel"></i>Personnes Hotel</div>
+                        <p class="nb danger">+ 80</p>
                     </div>
                 </div>
             </div>
+            <div class="situation general">
+                <h3>Evolution de la situation sannitaire depuis le 09/09/2021</h3>
+                <div class="container-general">
+                    <div class="cadre general-positive-cas">+ 2386</div>
+                    <div class="cadre general-death">+ 7</div>
 
-            <div class="link">
-                <button class="btn">Ou ce faire vacciner</button>
-                <button class="btn">Consignes au personnes malades</button>
-                <button class="btn">Violences Intra-familiale</button>
+                </div>
             </div>
-        </main>
+            <div class="situation hostel-capacity">
+                <h3>Capacité acceuil Hotel</h3>
+                <div class="hotel-capacity-container">
+                    <div class="cadre capacity-prov-sud">470</div>
+                    <div class="cadre capacity-prov-north">94</div>
+                    <div class="cadre capacity-prov-island">122</div>
+
+                </div>
+            </div>
+            <div class="situation vaccination">
+                <h3>Vaccination</h3>
+                <div class="vaccine-container">
+                    <div class="cadre first-dose">50.53%</div>
+                    <div class="cadre second-dose">33.75%</div>
+
+                </div>
+            </div>
+            <div class="situation confinement">
+                <h3>Confinement</h3>
+                <div class="confine-container">
+                    <div class="cadre controles">40 0000</div>
+                    <div class="cadre verbalisation">60%</div>
+                    <div class="cadre sanctions"> 40 contrôles avec 40 verbalisations*</div>
+                    <div class=" ammend"> Amendes : 15 000, 179 000 et 447 500frs</div>
+                    <div class=" confin-time">Prolongement du confinement encore en
+                        cours d’études...</div>
+
+                </div>
+            </div>
+    </div>
+
+    <div class="link">
+        <button class="btn">Ou ce faire vacciner</button>
+        <button class="btn">Consignes au personnes malades</button>
+        <button class="btn">Violences Intra-familiale</button>
+    </div>
+    </main>
     </div>
 </body>
 

@@ -55,6 +55,11 @@ img {
   box-sizing: border-box;
   margin: auto;
 }
+.container-today {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .situation {
   background-color: grey;
   padding: 20px;
@@ -73,10 +78,21 @@ img {
   margin: 1rem 0;
 }
 .cadre {
-  background-color: blue;
+  background-color: darkgray;
   margin-top: 1rem;
   border-radius: 5px;
   width: 200px;
   padding: 1rem;
+  font-size: 1rem;
+}
+i {
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+.danger {
+  color: red;
+  font-weight: bolder;
+  font-family: Roboto;
+  margin-top: 1rem;
   font-size: 2rem;
 }
