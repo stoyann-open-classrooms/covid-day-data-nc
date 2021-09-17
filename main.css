@@ -151,6 +151,7 @@ li {
 }
 
 header {
+  margin-top: 15rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
