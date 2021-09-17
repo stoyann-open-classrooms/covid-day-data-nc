@@ -67,11 +67,21 @@ header {
     text-align: center;
     margin-bottom: 2rem;
   }
+  h4 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $primary;
+    i {
+      margin: 0 2rem;
+    }
+  }
 }
 .container-today {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 3rem;
 }
 .cadre-title {
   font-size: 2rem;
