@@ -150,8 +150,76 @@ li {
   padding-left: 2rem;
 }
 
-.main {
-  position: relative;
-  top: 0;
+main {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 2rem;
+}
+
+header h1 {
+  color: #1d1d1d;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+.info-container .question {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border: 2px solid #1d1d1d;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.info-container .tel {
+  color: #d04f4f;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.info-container .tel span {
+  color: #1d1d1d;
+  font-size: 1.3rem;
+}
+
+.info-container .emergency {
+  margin-top: 2rem;
+  font-size: 3.3rem;
+  color: #d04f4f;
+  font-weight: bolder;
 }
 /*# sourceMappingURL=main.css.map */
