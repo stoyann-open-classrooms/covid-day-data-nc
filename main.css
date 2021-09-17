@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  width: 250px;
+}
+
+.text {
+  text-transform: uppercase;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.open-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.nav.visible {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.nav-black {
+  background-color: #1d1d1d;
+  width: 60%;
+  max-width: 480px;
+  min-width: 320px;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.nav-black.visible {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.nav-red {
+  background-color: #d04f4f;
+  width: 95%;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.nav-red.visible {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.nav-white {
+  background-color: #fff;
+  width: 95%;
+  padding: 4rem;
+  position: relative;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.nav-white.visible {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.close-btn {
+  opacity: 0.3;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+
+.list {
+  padding: 0;
+}
+
+.list li {
+  margin: 20px 0;
+}
+
+.list li a {
+  color: #1d1d1d;
+  font-size: 14px;
+  text-transform: uppercase;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.list li a:hover {
+  color: #d04f4f;
+}
+
+.list ul {
+  padding-left: 2rem;
+}
+
+.main {
+  position: relative;
+  top: 0;
+}
+/*# sourceMappingURL=main.css.map */

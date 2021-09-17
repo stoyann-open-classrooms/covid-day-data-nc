@@ -1,0 +1,9 @@
+@import "./SASS/variables";
+@import "./SASS/reset";
+@import "./SASS/mixins";
+@import "./SASS/naviguation";
+
+.main {
+  position: relative;
+  top: 0;
+}
