@@ -4,19 +4,13 @@
 @import "./SASS/naviguation";
 @import "./SASS/animation";
 
-main {
-  margin: 3rem;
-  padding: 10px;
-  width: 100%;
-  position: absolute;
-}
-
 header {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+
   p {
     font-size: 2rem;
   }
@@ -24,7 +18,7 @@ header {
   h1 {
     color: $dark;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
@@ -63,9 +57,10 @@ header {
   background-color: $blue;
   padding: 3rem 1rem;
   border-radius: 2rem;
-  height: 300px;
+  height: auto;
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
   h3 {
     font-size: 2rem;
     text-align: center;
