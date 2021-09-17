@@ -5,9 +5,10 @@
 @import "./SASS/animation";
 
 main {
-  margin: 0;
+  margin: 3rem;
   padding: 10px;
   width: 100%;
+  position: absolute;
 }
 
 header {
@@ -56,4 +57,44 @@ header {
     color: $primary;
     font-weight: bolder;
   }
+}
+
+.situation-today {
+  background-color: $blue;
+  padding: 3rem 1rem;
+  border-radius: 2rem;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+.container-today {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.cadre-title {
+  font-size: 2rem;
+  i {
+    margin-right: 5px;
+  }
+}
+
+.cadre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  width: 30%;
+}
+
+.nb-danger {
+  color: $primary;
+  font-size: 3rem;
+  font-weight: 600;
 }

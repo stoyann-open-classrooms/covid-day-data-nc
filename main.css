@@ -151,9 +151,10 @@ li {
 }
 
 main {
-  margin: 0;
+  margin: 3rem;
   padding: 10px;
   width: 100%;
+  position: absolute;
 }
 
 header {
@@ -221,5 +222,67 @@ header h1 {
   font-size: 3.3rem;
   color: #d04f4f;
   font-weight: bolder;
+}
+
+.situation-today {
+  background-color: #3282f7;
+  padding: 3rem 1rem;
+  border-radius: 2rem;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.situation-today h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container-today {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cadre-title {
+  font-size: 2rem;
+}
+
+.cadre-title i {
+  margin-right: 5px;
+}
+
+.cadre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  width: 30%;
+}
+
+.nb-danger {
+  color: #d04f4f;
+  font-size: 3rem;
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */
