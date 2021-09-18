@@ -4,6 +4,9 @@
 @import "./SASS/naviguation";
 @import "./SASS/animation";
 
+main {
+  margin-top: 400px;
+}
 header {
   margin-top: 15rem;
   width: 100%;
@@ -216,7 +219,7 @@ h1 {
   border-radius: 15px;
   font-size: 1.8rem;
   margin: 20px auto;
-  padding: 50px 80px;
+  padding: 100px 80px;
   max-width: 768px;
   position: relative;
 }
