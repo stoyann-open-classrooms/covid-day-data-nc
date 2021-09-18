@@ -69,6 +69,20 @@ const testimonials = [
       "https://i1.wp.com/www.radio1.pf/cms/wp-content/uploads/2021/07/Louis-Mapou.jpg?fit=800%2C511&ssl=1",
     text: "« La situation que nous endurons désormais confirme que la vaccination est le meilleure moyen, voire le seul aujourd’hui, de se protéger contre les formes graves du Covid-19 et donc de préserver nos vies et nos capacités hospitalières du variant DELTA. »",
   },
+  {
+    name: "Sonia Backes Présidente de la Province Sud",
+    position: "Facebook -18/09/2021",
+    photo:
+      "https://scontent.fnou1-1.fna.fbcdn.net/v/t1.6435-9/123655823_3551165464969712_6168552217871380076_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=LGEk5Ffh2C0AX9XNiYs&_nc_ht=scontent.fnou1-1.fna&oh=a1154ed89dbe196a2b9cebb8367088e4&oe=6169D639",
+    text: "Tout mon soutien aux équipes du Medipole qui gèrent une crise sans précédent.Les tests sont possibles désormais tous les jours et sans attente à l’arène du Sud Et n’oubliez pas, faites vous vacciner. Sur les personnes en réanimation, 1 seule vaccinée Tous les décès de ces 3 derniers jours étaient des personnes non vaccinées",
+  },
+  {
+    name: "Christopher Gyges Membre du gouvernement de la Nouvelle Caledonie",
+    position: "Facebook -14/09/2021",
+    photo:
+      "https://scontent.fnou1-1.fna.fbcdn.net/v/t1.6435-9/160518905_10157564170541394_3205486968565426329_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=174925&_nc_ohc=8SB9ih8MpqQAX-zZTIB&_nc_ht=scontent.fnou1-1.fna&oh=735b942ddde6f69382051303fd5f2006&oe=616B8AEC",
+    text: "Les mesures de confinement strict sont là pour protéger la santé des Calédoniens mais celles-ci nous imposent de prendre rapidement des dispositions pour protéger l’emploi et les entreprises.Après une rencontre ce jour avec les partenaires sociaux, nous avons acté que demain nous proposerons au gouvernement de remettre en œuvre le chômage partiel Covid afin de préserver l’emploi et le pouvoir d’achat des salariés. D’autres mesures interviendront prochainement. L’Etat a déjà annoncé que le fonds de solidarité sera  réactivé pour les entreprises et les patentés. Les provinces annonceront prochainement également leurs dispositifs d’aides qui viendront notamment en soutien aux plus petites structures. En cette période compliquée, nous devons être aux côtés des salariés et des entrepreneurs.",
+  },
 ];
 
 let idx = 1;
