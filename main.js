@@ -157,3 +157,7 @@ const dataSet = {
 };
 
 console.log(dataSet);
+
+const totalCasContainer = document.getElementById("total-cas");
+
+totalCasContainer.innerHTML = dataSet.totalCas;

@@ -1,0 +1,37 @@
+.dayliReport-container {
+  color: wheat;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.date {
+  color: $blue;
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: block;
+  margin: auto;
+}
+.report-icone {
+  height: 100px;
+}
+
+.nb-de-cas {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.nb {
+  font-size: 2rem;
+  color: $primary;
+}
+
+small {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}

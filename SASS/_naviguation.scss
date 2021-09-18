@@ -10,15 +10,20 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 5rem;
+  margin-left: 2%;
+  margin-top: 2%;
 }
 .open-btn {
-  position: fixed;
   z-index: 1;
   top: 10px;
   left: 10px;
   color: $blue;
   font-size: bolder;
+  transition: all 0.2s;
+  &:hover {
+    color: white;
+  }
 }
 
 .nav {
@@ -78,7 +83,7 @@
 
 .list li a {
   color: $dark;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   transition: color 0.3s ease-out;
 
@@ -86,6 +91,10 @@
     color: $blue;
   }
 }
+.active-link {
+  color: $blue;
+}
+
 .list ul {
   padding-left: 2rem;
 }

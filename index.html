@@ -9,122 +9,172 @@
     <title>Infos COVID NC</title>
     <link rel="stylesheet" href="./main.css">
     <script src="https://kit.fontawesome.com/6edb39c88a.js" crossorigin="anonymous"></script>
-
-
 </head>
 
-
-
 <body>
+    <header>
+
+        <button class="nav-btn open-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <h1>Infos corona virus Nouvelle-Calédonie</h1>
+
+        <img src="./src/icones/masque.png" alt="">
+
+    </header>
 
     <main>
-        <header>
-            <h1>Infos corona virus Nouvelle-Calédonie</h1>
-            <div class="testimonial-container">
-                <div class="progress-bar"></div>
-                <p class="testimonial">
-                    « Ce combat est le combat pour la vie. »
-                </p>
-                <div class="user">
-                    <img src="https://i1.wp.com/www.radio1.pf/cms/wp-content/uploads/2021/07/Louis-Mapou.jpg?fit=800%2C511&ssl=1"
-                        alt="user" class="user-image" />
-                    <div class="user-details">
-                        <h4 class="username">Louis Mapou président du 17eme gouvernement</h4>
-                        <p class="role">Point presse du 17.09.2021</p>
+
+        <div class="testimonial-container">
+            <div class="progress-bar"></div>
+            <p class="testimonial">
+                « Ce combat est le combat pour la vie. »
+            </p>
+            <div class="user">
+
+                <div class="user-details">
+                    <h4 class="username">Louis Mapou président du 17eme gouvernement</h4>
+                    <p class="role">Point presse du 17.09.2021</p>
+                </div>
+            </div>
+            <div class="user"> <img
+                    src="https://i1.wp.com/www.radio1.pf/cms/wp-content/uploads/2021/07/Louis-Mapou.jpg?fit=800%2C511&ssl=1"
+                    alt="user" class="user-image" /></div>
+
+        </div>
+
+        <h2 class="date">19/09/2009</h2>
+        <div class="dayliReport-container">
+            <div class="report-header">
+                <div class="nb-de-cas">
+                    <img class="report-icone" src="./src/icones/virus.png" alt="">
+                    <p class="nb">3350</p>
+                </div>
+                <small>Cas positifs déclarer aujourd'hui</small>
+            </div>
+            <div class="report-header">
+                <div class="nb-de-cas">
+                    <img class="report-icone" src="./src/icones/bed.png" alt="">
+                    <p class="nb">3350</p>
+
+                </div>
+                <small>Personnes en réanimation</small>
+            </div>
+            <div class="report-header">
+                <div class="nb-de-cas">
+                    <img class="report-icone" src="./src/icones/death.png" alt="">
+                    <p class="nb">3350</p>
+                </div>
+                <small>persone décédé</small>
+
+            </div>
+
+            <div class="dayliReport-container">
+                <div class="report-header">
+                    <div class="nb-de-cas">
+                        <img class="report-icone" src="./src/icones/virus.png" alt="">
+                        <p class="nb" id="total-cas">000</p>
                     </div>
-                </div>
-            </div>
-
-
-            <div class="header-contact-tel">
-                <div class="tel-box">
-                    <div>Question relative ou COVID ou en cas de symptômes</div>
-                    <a class="btn-tel" href="tel:+687050202"><i class="fas fa-phone-alt"></i>appeler le 05.05.02</a>
-                </div>
-            </div>
-        </header>
-
-
-
-
-
-        <div class="situation-today">
-            <h3>Evolution de la situation sanitaire 17/09/2021</h3>
-            <h4><i class="fas fa-exclamation-circle"></i>Confinement prolongé jusqu'au 4 Octobre <i
-                    class="fas fa-exclamation-circle"></i></h4>
-            <div class="container-today">
-                <div class="cadre today-positive-cas">
-                    <div class="cadre-title"><i class="fas fa-vial"></i>NOUVEAUX CAS</div>
-                    <p class="nb-danger">+ 2886</p>
-                </div>
-                <div class="cadre today-death">
-                    <div class="cadre-title"><i class="fas fa-sad-tear"></i>décès</div>
-                    <p class="nb-danger">+ 14</p>
-                </div>
-                <div class="cadre today-rea">
-                    <div class="cadre-title"><i class="fas fa-procedures"></i>Réanimation</div>
-                    <p class="nb-danger">+ 29</p>
+                    <small>cas positif depuis le 6/09/2021</small>
 
                 </div>
-                <div class="cadre today-hosp">
-                    <div class="cadre-title"><i class="fas fa-hospital"></i>Hospitalisations</div>
-                    <p class="nb-danger">+ 182</p>
-                </div>
+                <div class="report-header">
+                    <div class="nb-de-cas">
+                        <img class="report-icone" src="./src/icones/ambulance.png" alt="">
+                        <p class="nb">3350</p>
+                    </div>
+                    <small>personnes hospitalisé</small>
 
-
-                <div class="cadre today-hot">
-                    <div class="cadre-title"><i class="fas fa-hotel"></i>Personnes en Hôtel</div>
-                    <p class="nb-danger"> ?</p>
                 </div>
-                <div class="cadre today-hot">
-                    <div class="cadre-title"><i class="fas fa-virus-slash"></i>Guérison</div>
-                    <p class="nb-danger">8</p>
+                <div class="report-header">
+                    <div class="nb-de-cas">
+                        <img class="report-icone" src="./src/icones/cure.png" alt="">
+                        <p class="nb-de-personne-guerie"></p>
+                    </div>
+                    <small>guerison</small>
+
                 </div>
 
             </div>
         </div>
-        <div class="situation-today">
-            <h3>Evolution de la situation sanitaire 16/09/2021</h3>
-            <div class="container-today">
-                <div class="cadre today-positive-cas">
-                    <div class="cadre-title"><i class="fas fa-vial"></i>NOUVEAUX CAS</div>
-                    <p class="nb-danger">+ 1174</p>
+        <h2 class="date">19/09/2009 Nombres d'injection réalisées</h2>
+        <div class="dayliReport-container">
+            <div class="report-header">
+                <div class="nb-de-cas">
+                    <img class="report-icone" src="./src/icones/dose1.png" alt="">
+                    <p class="nb">4020</p>
                 </div>
-                <div class="cadre today-death">
-                    <div class="cadre-title"><i class="fas fa-sad-tear"></i>décès</div>
-                    <p class="nb-danger">+ 3</p>
-                </div>
-                <div class="cadre today-rea">
-                    <div class="cadre-title"><i class="fas fa-procedures"></i>Réanimation</div>
-                    <p class="nb-danger">+ 27</p>
-
-                </div>
-                <div class="cadre today-hosp">
-                    <div class="cadre-title"><i class="fas fa-hospital"></i>Hospitalisations</div>
-                    <p class="nb-danger">+ 161</p>
-                </div>
-
-
-                <div class="cadre today-hot">
-                    <div class="cadre-title"><i class="fas fa-hotel"></i>Personnes en Hôtel</div>
-                    <p class="nb-danger">+ 80</p>
-                </div>
-                <div class="cadre today-hot">
-                    <div class="cadre-title"><i class="fas fa-virus-slash"></i>Guérison</div>
-                    <p class="nb-danger">0</p>
-                </div>
-
-
-
+                <small>premiere dose</small>
 
             </div>
+            <div class="report-header">
+                <div class="nb-de-cas">
+                    <img class="report-icone" src="./src/icones/dose2.png" alt="">
+                    <p class="nb">559</p>
+                </div>
+                <small>deuxieme dose</small>
+
+            </div>
+            <div class="report-header">
+                <div class="nb-de-cas">
+                    <img class="report-icone" src="./src/icones/dose3.png" alt="">
+                    <p class="nb">170</p>
+
+                    <small>Troisieme dose</small>
+                </div>
+
+            </div>
+
         </div>
+        <h2 class="date">nombre total de personnes vaccinées</h2>
+        <div class="dayliReport-container">
+            <div class="report-header">
+                <div class="nb-de-cas">
+                    <img class="report-icone" src="./src/icones/dose1.png" alt="">
+                    <p class="nb">4020</p>
+                </div>
+                <small>premiere dose</small>
+
+            </div>
+            <div class="report-header">
+                <div class="nb-de-cas">
+                    <img class="report-icone" src="./src/icones/dose2.png" alt="">
+                    <p class="nb">559</p>
+                </div>
+                <small>deuxieme dose</small>
+
+            </div>
+            <div class="report-header">
+                <div class="nb-de-cas">
+                    <img class="report-icone" src="./src/icones/dose3.png" alt="">
+                    <p class="nb">170</p>
+
+                </div>
+                <small>Troisieme dose</small>
+
+            </div>
+
+        </div>
+
 
     </main>
 
-    <button class="nav-btn open-btn">
-        <i class="fas fa-bars"></i>
-    </button>
+
+
+
+    <footer>
+        <div class="header-contact-tel">
+            <div class="tel-box">
+                <div>Question relative ou COVID ou en cas de symptômes</div>
+                <a class="btn-tel" href="tel:+687050202"><i class="fas fa-phone-alt"></i>appeler le 05.05.02</a>
+
+            </div>
+            <div class="donne">Les donées indiquées sur ce site dont issue des points presse du Gouvernement de la
+                Nouvelle-Calédonie
+            </div>
+        </div>
+    </footer>
+
 
     <div class="nav nav-black">
         <div class="nav nav-red">
@@ -137,10 +187,10 @@
 
                 <ul class="list">
                     <li><a href="#">Accueil</a></li>
+                    <li><a class="active-link" href="./pages/contact.html">Où et comment ce faire vacciner</a></li>
                     <li><a href="./pages/actualite.html">Actualités</a></li>
                     <li><a href="./pages/bilanvaccinal.html">Bilan vaccinal</a></li>
                     <li><a href="./pages/attestation.html">Attestation de déplacement</a></li>
-                    <li><a href="./pages/contact.html">Contacts utiles</a></li>
                     <li><a href="./pages/volontaires.html">Devenir volontaire</a></li>
                     <li><a href="./pages/aPropos.html">A propos</a></li>
 

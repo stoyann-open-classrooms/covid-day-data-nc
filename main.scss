@@ -3,133 +3,15 @@
 @import "./SASS/mixins";
 @import "./SASS/naviguation";
 @import "./SASS/animation";
+@import "./SASS/header";
+@import "./SASS/testimonial";
+@import "./SASS/dailyReport";
 
 main {
-  position: relative;
-  top: 500px;
-  @include bigPhone-and-higher {
-    top: 600px;
-  }
-  @include tablet-and-higher {
-    top: 400px;
-  }
-
-  // margin-bottom: 390px;
-}
-header {
-  width: 100%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  margin: auto;
   align-items: center;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background-color: $dark;
-  z-index: 1;
-  padding: 1rem 2rem;
-
-  p {
-    font-size: 2rem;
-  }
-
-  h1 {
-    color: $blue;
-    text-transform: uppercase;
-    font-size: 2.6rem;
-    width: 90%;
-
-    @include bigPhone-and-higher {
-      font-size: 2rem;
-      width: 90%;
-    }
-  }
-}
-
-.info-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3rem;
-
-  .question {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    border: 2px solid $dark;
-    border-radius: 5px;
-    padding: 1rem;
-    @include bigPhone-and-higher {
-      font-size: 1rem;
-    }
-  }
-  .tel {
-    color: $primary;
-    font-size: 3rem;
-    font-weight: bolder;
-    span {
-      color: $dark;
-      font-size: 1.3rem;
-    }
-  }
-  .emergency {
-    margin-top: 2rem;
-    font-size: 3.3rem;
-    color: $primary;
-    font-weight: bolder;
-  }
-}
-
-.situation-today {
-  background-color: $blue;
-  padding: 3rem 1rem;
-  border-radius: 2rem;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
-  h3 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  h4 {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: $primary;
-    i {
-      margin: 0 2rem;
-    }
-  }
-}
-.container-today {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 3rem;
-}
-.cadre-title {
-  font-size: 2rem;
-  i {
-    margin-right: 5px;
-  }
-}
-
-.cadre {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem;
-  width: 30%;
-  text-transform: uppercase;
-}
-
-.nb-danger {
-  color: $primary;
-  font-size: 3rem;
-  font-weight: 600;
 }
 
 // =============== FAQ ========================
@@ -137,6 +19,7 @@ header {
 h1 {
   margin: 50px 0 30px;
   text-align: center;
+  color: $blue;
 }
 
 .faq-container {
@@ -145,7 +28,7 @@ h1 {
 }
 
 .faq {
-  background-color: transparent;
+  background-color: #f0f0f0d0;
   border: 1px solid #9fa4a8;
   border-radius: 10px;
   margin: 20px 0;
@@ -235,121 +118,89 @@ h1 {
 }
 
 // actualités
-
-.testimonial-container {
-  color: white;
-  border: 3px solid $blue;
-  border-radius: 15px;
-  font-size: 1rem;
-  font-weight: bolder;
-  display: flex;
-  margin-bottom: 20px;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem 20px;
-  width: 90%;
-
-  transform: translateX(30px);
+footer {
+  background-color: rgba(179, 179, 179, 0.329);
+  padding: 2rem;
+  height: 200px;
   position: relative;
-  @include bigPhone-and-higher {
-    top: 600px;
-    display: none;
-  }
-}
-
-.testimonial {
-  line-height: 28px;
-  text-align: center;
-  font-size: 1.3rem;
-}
-
-.user {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.user .user-image {
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  object-fit: cover;
-}
-
-.user .user-details {
-  margin-left: 10px;
-  font-size: 1rem;
-}
-
-.user .username {
-  margin: 0;
-}
-
-.user .role {
-  font-weight: normal;
-
-  font-size: 1rem;
-
-  @include tablet-and-higher {
-    font-size: 0.4rem;
-  }
-}
-
-.progress-bar {
-  background-color: rgba(255, 255, 255, 0.178);
-  height: 4px;
-  width: 100%;
-  animation: grow 10s linear infinite;
-  transform-origin: left;
-  margin-bottom: 1rem;
-}
-
-@keyframes grow {
-  0% {
-    transform: scaleX(0);
-  }
-}
-
-@include tablet-and-higher {
-  .testimonial-container {
-    padding: 10px 10px;
-  }
-}
-
-.header-contact-tel {
-  color: $blue;
-  font-size: 1.6rem;
-  text-align: center;
-
-  .btn-tel {
-    border: 1px solid $blue;
-    padding: 1rem;
-    border-radius: 10px;
-    transition: all 0.4s ease-in-out;
-
-    i {
-      margin-right: 5px;
-    }
-    &:hover {
-      background-color: $blue;
-      color: $dark;
-    }
-    @include bigPhone-and-higher {
-      display: flex;
-      font-size: 1rem;
-    }
-  }
-  .tel-box {
-    display: flex;
+  .header-contact-tel {
+    color: $blue;
+    font-size: 1rem;
     text-align: center;
-    div {
-      margin-right: 2rem;
-      text-align: center;
-      transform: translateY(10px);
+
+    .btn-tel {
+      border: 1px solid $blue;
+      padding: 1rem;
+      border-radius: 10px;
+      transition: all 0.4s ease-in-out;
+
+      i {
+        margin-right: 5px;
+      }
+      &:hover {
+        background-color: $blue;
+        color: $dark;
+      }
       @include bigPhone-and-higher {
-        font-size: 1.2rem;
+        display: flex;
+        font-size: 1rem;
+      }
+    }
+    .tel-box {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      div {
+        margin-right: 2rem;
+        text-align: center;
+        transform: translateY(-2px);
+        font-size: 2rem;
+        color: white;
+        @include bigPhone-and-higher {
+          font-size: 1.2rem;
+        }
       }
     }
   }
+  .info-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .question {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border: 2px solid $blue;
+      border-radius: 5px;
+      padding: 1rem;
+      @include bigPhone-and-higher {
+        font-size: 1rem;
+      }
+    }
+    .tel {
+      color: $primary;
+      font-size: 3rem;
+      font-weight: bolder;
+      span {
+        color: $dark;
+        font-size: 1.3rem;
+      }
+    }
+    .emergency {
+      margin-top: 2rem;
+      font-size: 3.3rem;
+      color: $primary;
+      font-weight: bolder;
+    }
+  }
+}
+
+.donnee {
+  color: white;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 2rem;
+  margin: auto;
 }
