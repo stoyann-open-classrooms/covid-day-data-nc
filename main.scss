@@ -8,7 +8,7 @@ main {
   position: relative;
   top: 500px;
   @include bigPhone-and-higher {
-    top: 400px;
+    top: 600px;
   }
   @include tablet-and-higher {
     top: 400px;
@@ -20,13 +20,14 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
   position: fixed;
   top: 0px;
   left: 0px;
   background-color: $dark;
   z-index: 1;
+  padding: 1rem 2rem;
 
   p {
     font-size: 2rem;
@@ -35,7 +36,9 @@ header {
   h1 {
     color: $blue;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 2.6rem;
+    width: 90%;
+
     @include bigPhone-and-higher {
       font-size: 2rem;
       width: 90%;
@@ -234,17 +237,18 @@ h1 {
 // actualités
 
 .testimonial-container {
-  background-color: $blue;
-  color: $dark;
+  color: white;
+  border: 3px solid $blue;
   border-radius: 15px;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: bolder;
   display: flex;
   margin-bottom: 20px;
   flex-direction: column;
   align-items: center;
-  padding: 30px 20px;
+  padding: 1rem 20px;
   width: 90%;
+
   transform: translateX(30px);
   position: relative;
   @include bigPhone-and-higher {
@@ -253,42 +257,29 @@ h1 {
   }
 }
 
-.fa-quote {
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 28px;
-  position: absolute;
-  top: 70px;
-}
-
-.fa-quote-right {
-  left: 40px;
-}
-
-.fa-quote-left {
-  right: 40px;
-}
-
 .testimonial {
   line-height: 28px;
   text-align: center;
+  font-size: 1.3rem;
 }
 
 .user {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .user .user-image {
   border-radius: 50%;
-  height: 75px;
-  width: 75px;
+  height: 40px;
+  width: 40px;
   object-fit: cover;
 }
 
 .user .user-details {
   margin-left: 10px;
+  font-size: 1rem;
 }
 
 .user .username {
@@ -297,14 +288,16 @@ h1 {
 
 .user .role {
   font-weight: normal;
-  margin: 10px 0;
+
+  font-size: 1rem;
+
   @include tablet-and-higher {
     font-size: 0.4rem;
   }
 }
 
 .progress-bar {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.178);
   height: 4px;
   width: 100%;
   animation: grow 10s linear infinite;
@@ -321,5 +314,42 @@ h1 {
 @include tablet-and-higher {
   .testimonial-container {
     padding: 10px 10px;
+  }
+}
+
+.header-contact-tel {
+  color: $blue;
+  font-size: 1.6rem;
+  text-align: center;
+
+  .btn-tel {
+    border: 1px solid $blue;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+
+    i {
+      margin-right: 5px;
+    }
+    &:hover {
+      background-color: $blue;
+      color: $dark;
+    }
+    @include bigPhone-and-higher {
+      display: flex;
+      font-size: 1rem;
+    }
+  }
+  .tel-box {
+    display: flex;
+    text-align: center;
+    div {
+      margin-right: 2rem;
+      text-align: center;
+      transform: translateY(10px);
+      @include bigPhone-and-higher {
+        font-size: 1.2rem;
+      }
+    }
   }
 }

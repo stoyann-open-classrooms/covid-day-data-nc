@@ -140,14 +140,14 @@ li {
 
 .list li a {
   color: #1d1d1d;
-  font-size: 14px;
+  font-size: 2rem;
   text-transform: uppercase;
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
 
 .list li a:hover {
-  color: #991616;
+  color: #7fa4e0;
 }
 
 .list ul {
@@ -161,7 +161,7 @@ main {
 
 @media screen and (max-width: 29rem) {
   main {
-    top: 400px;
+    top: 600px;
   }
 }
 
@@ -179,15 +179,19 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
   position: fixed;
   top: 0px;
   left: 0px;
   background-color: #1d1d1d;
   z-index: 1;
+  padding: 1rem 2rem;
 }
 
 header p {
@@ -197,7 +201,8 @@ header p {
 header h1 {
   color: #7fa4e0;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 2.6rem;
+  width: 90%;
 }
 
 @media screen and (max-width: 29rem) {
@@ -441,10 +446,10 @@ h1 {
 }
 
 .testimonial-container {
-  background-color: #7fa4e0;
-  color: #1d1d1d;
+  color: white;
+  border: 3px solid #7fa4e0;
   border-radius: 15px;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: bolder;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,7 +462,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 20px;
+  padding: 1rem 20px;
   width: 90%;
   -webkit-transform: translateX(30px);
           transform: translateX(30px);
@@ -471,24 +476,10 @@ h1 {
   }
 }
 
-.fa-quote {
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 28px;
-  position: absolute;
-  top: 70px;
-}
-
-.fa-quote-right {
-  left: 40px;
-}
-
-.fa-quote-left {
-  right: 40px;
-}
-
 .testimonial {
   line-height: 28px;
   text-align: center;
+  font-size: 1.3rem;
 }
 
 .user {
@@ -501,19 +492,20 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .user .user-image {
   border-radius: 50%;
-  height: 75px;
-  width: 75px;
+  height: 40px;
+  width: 40px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .user .user-details {
   margin-left: 10px;
+  font-size: 1rem;
 }
 
 .user .username {
@@ -522,7 +514,7 @@ h1 {
 
 .user .role {
   font-weight: normal;
-  margin: 10px 0;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 76.8rem) {
@@ -532,7 +524,7 @@ h1 {
 }
 
 .progress-bar {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.178);
   height: 4px;
   width: 100%;
   -webkit-animation: grow 10s linear infinite;
@@ -559,6 +551,58 @@ h1 {
 @media screen and (min-width: 76.8rem) {
   .testimonial-container {
     padding: 10px 10px;
+  }
+}
+
+.header-contact-tel {
+  color: #7fa4e0;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.header-contact-tel .btn-tel {
+  border: 1px solid #7fa4e0;
+  padding: 1rem;
+  border-radius: 10px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.header-contact-tel .btn-tel i {
+  margin-right: 5px;
+}
+
+.header-contact-tel .btn-tel:hover {
+  background-color: #7fa4e0;
+  color: #1d1d1d;
+}
+
+@media screen and (max-width: 29rem) {
+  .header-contact-tel .btn-tel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1rem;
+  }
+}
+
+.header-contact-tel .tel-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.header-contact-tel .tel-box div {
+  margin-right: 2rem;
+  text-align: center;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+@media screen and (max-width: 29rem) {
+  .header-contact-tel .tel-box div {
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -78,12 +78,12 @@
 
 .list li a {
   color: $dark;
-  font-size: 14px;
+  font-size: 2rem;
   text-transform: uppercase;
   transition: color 0.3s ease-out;
 
   &:hover {
-    color: $primary;
+    color: $blue;
   }
 }
 .list ul {
