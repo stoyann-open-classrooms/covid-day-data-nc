@@ -14,8 +14,11 @@
 }
 .open-btn {
   position: fixed;
+  z-index: 1;
   top: 10px;
   left: 10px;
+  color: $blue;
+  font-size: bolder;
 }
 
 .nav {
@@ -42,7 +45,7 @@
   transition-delay: 0s;
 }
 .nav-red {
-  background-color: $primary;
+  background-color: $blue;
   width: 95%;
   transition-delay: 0.2s;
 }

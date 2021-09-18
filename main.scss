@@ -8,25 +8,32 @@ main {
   position: relative;
   top: 500px;
   @include bigPhone-and-higher {
-    top: 600px;
+    top: 400px;
+  }
+  @include tablet-and-higher {
+    top: 400px;
   }
 
   // margin-bottom: 390px;
 }
 header {
-  margin-top: 15rem;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: $dark;
+  z-index: 1;
 
   p {
     font-size: 2rem;
   }
 
   h1 {
-    color: $dark;
+    color: $blue;
     text-transform: uppercase;
     font-size: 2rem;
     @include bigPhone-and-higher {
@@ -230,12 +237,13 @@ h1 {
   background-color: $blue;
   color: $dark;
   border-radius: 15px;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
+  font-weight: bolder;
   display: flex;
   margin-bottom: 20px;
   flex-direction: column;
   align-items: center;
-  padding: 100px 80px;
+  padding: 30px 20px;
   width: 90%;
   transform: translateX(30px);
   position: relative;
@@ -290,6 +298,9 @@ h1 {
 .user .role {
   font-weight: normal;
   margin: 10px 0;
+  @include tablet-and-higher {
+    font-size: 0.4rem;
+  }
 }
 
 .progress-bar {
@@ -310,11 +321,5 @@ h1 {
 @include tablet-and-higher {
   .testimonial-container {
     padding: 10px 10px;
-  }
-}
-
-@include tablet-and-higher {
-  .fa-quote {
-    display: none;
   }
 }

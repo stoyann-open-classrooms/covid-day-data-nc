@@ -57,8 +57,11 @@ li {
 
 .open-btn {
   position: fixed;
+  z-index: 1;
   top: 10px;
   left: 10px;
+  color: #7fa4e0;
+  font-size: bolder;
 }
 
 .nav {
@@ -95,7 +98,7 @@ li {
 }
 
 .nav-red {
-  background-color: #5c1e1e;
+  background-color: #7fa4e0;
   width: 95%;
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
@@ -144,7 +147,7 @@ li {
 }
 
 .list li a:hover {
-  color: #5c1e1e;
+  color: #991616;
 }
 
 .list ul {
@@ -158,12 +161,17 @@ main {
 
 @media screen and (max-width: 29rem) {
   main {
-    top: 600px;
+    top: 400px;
+  }
+}
+
+@media screen and (min-width: 76.8rem) {
+  main {
+    top: 400px;
   }
 }
 
 header {
-  margin-top: 15rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,6 +183,11 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #1d1d1d;
+  z-index: 1;
 }
 
 header p {
@@ -182,7 +195,7 @@ header p {
 }
 
 header h1 {
-  color: #1d1d1d;
+  color: #7fa4e0;
   text-transform: uppercase;
   font-size: 2rem;
 }
@@ -226,7 +239,7 @@ header h1 {
 }
 
 .info-container .tel {
-  color: #5c1e1e;
+  color: #991616;
   font-size: 3rem;
   font-weight: bolder;
 }
@@ -239,7 +252,7 @@ header h1 {
 .info-container .emergency {
   margin-top: 2rem;
   font-size: 3.3rem;
-  color: #5c1e1e;
+  color: #991616;
   font-weight: bolder;
 }
 
@@ -268,7 +281,7 @@ header h1 {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 2rem;
-  color: #5c1e1e;
+  color: #991616;
 }
 
 .situation-today h4 i {
@@ -314,7 +327,7 @@ header h1 {
 }
 
 .nb-danger {
-  color: #5c1e1e;
+  color: #991616;
   font-size: 3rem;
   font-weight: 600;
 }
@@ -431,7 +444,8 @@ h1 {
   background-color: #7fa4e0;
   color: #1d1d1d;
   border-radius: 15px;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
+  font-weight: bolder;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -443,7 +457,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 100px 80px;
+  padding: 30px 20px;
   width: 90%;
   -webkit-transform: translateX(30px);
           transform: translateX(30px);
@@ -511,6 +525,12 @@ h1 {
   margin: 10px 0;
 }
 
+@media screen and (min-width: 76.8rem) {
+  .user .role {
+    font-size: 0.4rem;
+  }
+}
+
 .progress-bar {
   background-color: #fff;
   height: 4px;
@@ -539,12 +559,6 @@ h1 {
 @media screen and (min-width: 76.8rem) {
   .testimonial-container {
     padding: 10px 10px;
-  }
-}
-
-@media screen and (min-width: 76.8rem) {
-  .fa-quote {
-    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
