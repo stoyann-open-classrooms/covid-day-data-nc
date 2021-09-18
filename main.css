@@ -415,7 +415,7 @@ h1 {
   font-size: 1.8rem;
   margin: 20px auto;
   padding: 100px 80px;
-  max-width: 768px;
+  width: 90%;
   position: relative;
 }
 
