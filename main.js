@@ -143,3 +143,17 @@ function updateTestimonial() {
 }
 
 setInterval(updateTestimonial, 10000);
+const dataSet = {
+  totalCas: 3350,
+  guerison: 19,
+  deces: 19,
+  reanimation: 19,
+  hospitalises: 232,
+  DosesInject: {
+    doseInjectFirst: 125084,
+    doseInjectSecond: 79213,
+    doseInjectthird: 875,
+  },
+};
+
+console.log(dataSet);
