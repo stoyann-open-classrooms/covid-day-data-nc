@@ -89,7 +89,7 @@ const testimonials = [
     position: "??????",
     photo:
       "https://i1.wp.com/www.radio1.pf/cms/wp-content/uploads/2021/07/Louis-Mapou.jpg?fit=800%2C511&ssl=1",
-    text: "⚠️ PROLONGEMENT DU CONFINEMENT STRICT JUSQU’AU 4 OCTOBRE À MINUIT ‼️ Les mêmes règles de confinement seront appliquées (restrictions, contrôles, couvre-feu…)",
+    text: "PROLONGEMENT DU CONFINEMENT STRICT JUSQU’AU 4 OCTOBRE À MINUIT ‼️  Prolongement du confinement strict jusqu'au 4 Octobre a minuit .Les mêmes règles de confinement seront appliquées (restrictions, contrôles, couvre-feu…)",
   },
   {
     name: "Louis Mapou président du 17eme gouvernement",
@@ -146,4 +146,4 @@ function updateTestimonial() {
   }
 }
 
-setInterval(updateTestimonial, 10000);
+setInterval(updateTestimonial, 5000);

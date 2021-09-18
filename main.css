@@ -152,8 +152,8 @@ li {
 }
 
 main {
-  margin-top: 400px;
-  margin-bottom: 390px;
+  position: relative;
+  top: 500px;
 }
 
 header {

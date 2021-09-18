@@ -5,8 +5,10 @@
 @import "./SASS/animation";
 
 main {
-  margin-top: 400px;
-  margin-bottom: 390px;
+  position: relative;
+  top: 500px;
+
+  // margin-bottom: 390px;
 }
 header {
   margin-top: 15rem;
