@@ -26,13 +26,33 @@ const testimonials = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRfUdy9QfrALjHC7MfKsKZ5sqAszYmNZvj3sl8cMPF0pqbR7vigV-qsjhtH7maMeS4Csk&usqp=CAU",
     text: "2886 cas positifs  avérés, 14 décès,211 patients hospitalisés,80 personnes sont déjà placées en hôtel,8 personnes guéries depuis le 06.09.21 ",
   },
-
+  {
+    name: "Nicolas Metzdorf Maire de la Foa-",
+    position: "Facebook -14/09/2021",
+    photo:
+      "https://scontent.fnou1-1.fna.fbcdn.net/v/t1.6435-9/107004592_3080681845379700_1001833466241717244_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=c_-Jl_Iou54AX9vFY8S&_nc_ht=scontent.fnou1-1.fna&oh=293a84dd5548a49cd26b646cf18a6a66&oe=616C09C1",
+    text: "L'hôpital sera bientôt saturé, notre système de soin va se dégrader, un tri dans les patients se fera sûrement dans les prochains jours et la grande majorité des malades ne sera pas vaccinée.",
+  },
+  {
+    name: "Sonia Backes Présidente de la Province Sud",
+    position: "Facebook -18/09/2021",
+    photo:
+      "https://scontent.fnou1-1.fna.fbcdn.net/v/t1.6435-9/123655823_3551165464969712_6168552217871380076_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=LGEk5Ffh2C0AX9XNiYs&_nc_ht=scontent.fnou1-1.fna&oh=a1154ed89dbe196a2b9cebb8367088e4&oe=6169D639",
+    text: "Tout mon soutien aux équipes du Medipole qui gèrent une crise sans précédent.Les tests sont possibles désormais tous les jours et sans attente à l’arène du Sud Et n’oubliez pas, faites vous vacciner. Sur les personnes en réanimation, 1 seule vaccinée Tous les décès de ces 3 derniers jours étaient des personnes non vaccinées",
+  },
   {
     name: "Louis Mapou président du 17eme gouvernement",
     position: "point presse du 17.09.2021",
     photo:
       "https://i1.wp.com/www.radio1.pf/cms/wp-content/uploads/2021/07/Louis-Mapou.jpg?fit=800%2C511&ssl=1",
     text: " 8 personnes guérieLe virus ne circule pas seul, il se transmet d’individus à individus, sans distinction, quel que soit votre âge et votre état de santé. » Louis Mapou ",
+  },
+  {
+    name: "Nicolas Metzdorf Maire de la Foa-",
+    position: "Facebook -14/09/2021",
+    photo:
+      "https://scontent.fnou1-1.fna.fbcdn.net/v/t1.6435-9/107004592_3080681845379700_1001833466241717244_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=c_-Jl_Iou54AX9vFY8S&_nc_ht=scontent.fnou1-1.fna&oh=293a84dd5548a49cd26b646cf18a6a66&oe=616C09C1",
+    text: "Se vacciner c'est se protéger soi mais c'est aussi protéger tout le système de santé et donc les autres. Vaccinez-vous, s'il vous plaît.",
   },
   {
     name: "Louis Mapou président du 17eme gouvernement",
@@ -69,13 +89,7 @@ const testimonials = [
       "https://i1.wp.com/www.radio1.pf/cms/wp-content/uploads/2021/07/Louis-Mapou.jpg?fit=800%2C511&ssl=1",
     text: "« La situation que nous endurons désormais confirme que la vaccination est le meilleure moyen, voire le seul aujourd’hui, de se protéger contre les formes graves du Covid-19 et donc de préserver nos vies et nos capacités hospitalières du variant DELTA. »",
   },
-  {
-    name: "Sonia Backes Présidente de la Province Sud",
-    position: "Facebook -18/09/2021",
-    photo:
-      "https://scontent.fnou1-1.fna.fbcdn.net/v/t1.6435-9/123655823_3551165464969712_6168552217871380076_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=LGEk5Ffh2C0AX9XNiYs&_nc_ht=scontent.fnou1-1.fna&oh=a1154ed89dbe196a2b9cebb8367088e4&oe=6169D639",
-    text: "Tout mon soutien aux équipes du Medipole qui gèrent une crise sans précédent.Les tests sont possibles désormais tous les jours et sans attente à l’arène du Sud Et n’oubliez pas, faites vous vacciner. Sur les personnes en réanimation, 1 seule vaccinée Tous les décès de ces 3 derniers jours étaient des personnes non vaccinées",
-  },
+
   {
     name: "Christopher Gyges Membre du gouvernement de la Nouvelle Caledonie",
     position: "Facebook -14/09/2021",
