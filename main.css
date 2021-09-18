@@ -156,6 +156,12 @@ main {
   top: 500px;
 }
 
+@media screen and (max-width: 29rem) {
+  main {
+    top: 600px;
+  }
+}
+
 header {
   margin-top: 15rem;
   width: 100%;
@@ -178,7 +184,14 @@ header p {
 header h1 {
   color: #1d1d1d;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 29rem) {
+  header h1 {
+    font-size: 2rem;
+    width: 90%;
+  }
 }
 
 .info-container {
@@ -204,6 +217,12 @@ header h1 {
   border: 2px solid #1d1d1d;
   border-radius: 5px;
   padding: 1rem;
+}
+
+@media screen and (max-width: 29rem) {
+  .info-container .question {
+    font-size: 1rem;
+  }
 }
 
 .info-container .tel {
@@ -413,10 +432,29 @@ h1 {
   color: #1d1d1d;
   border-radius: 15px;
   font-size: 1.8rem;
-  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 100px 80px;
   width: 90%;
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
   position: relative;
+}
+
+@media screen and (max-width: 29rem) {
+  .testimonial-container {
+    top: 600px;
+    display: none;
+  }
 }
 
 .fa-quote {
@@ -436,7 +474,7 @@ h1 {
 
 .testimonial {
   line-height: 28px;
-  text-align: justify;
+  text-align: center;
 }
 
 .user {
@@ -481,6 +519,7 @@ h1 {
           animation: grow 10s linear infinite;
   -webkit-transform-origin: left;
           transform-origin: left;
+  margin-bottom: 1rem;
 }
 
 @-webkit-keyframes grow {
@@ -499,7 +538,7 @@ h1 {
 
 @media screen and (min-width: 76.8rem) {
   .testimonial-container {
-    padding: 20px 30px;
+    padding: 10px 10px;
   }
 }
 

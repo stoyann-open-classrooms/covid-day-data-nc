@@ -7,6 +7,9 @@
 main {
   position: relative;
   top: 500px;
+  @include bigPhone-and-higher {
+    top: 600px;
+  }
 
   // margin-bottom: 390px;
 }
@@ -25,7 +28,11 @@ header {
   h1 {
     color: $dark;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 2rem;
+    @include bigPhone-and-higher {
+      font-size: 2rem;
+      width: 90%;
+    }
   }
 }
 
@@ -42,6 +49,9 @@ header {
     border: 2px solid $dark;
     border-radius: 5px;
     padding: 1rem;
+    @include bigPhone-and-higher {
+      font-size: 1rem;
+    }
   }
   .tel {
     color: $primary;
@@ -221,10 +231,18 @@ h1 {
   color: $dark;
   border-radius: 15px;
   font-size: 1.8rem;
-  margin: 20px auto;
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
   padding: 100px 80px;
   width: 90%;
+  transform: translateX(30px);
   position: relative;
+  @include bigPhone-and-higher {
+    top: 600px;
+    display: none;
+  }
 }
 
 .fa-quote {
@@ -244,7 +262,7 @@ h1 {
 
 .testimonial {
   line-height: 28px;
-  text-align: justify;
+  text-align: center;
 }
 
 .user {
@@ -280,6 +298,7 @@ h1 {
   width: 100%;
   animation: grow 10s linear infinite;
   transform-origin: left;
+  margin-bottom: 1rem;
 }
 
 @keyframes grow {
@@ -290,7 +309,7 @@ h1 {
 
 @include tablet-and-higher {
   .testimonial-container {
-    padding: 20px 30px;
+    padding: 10px 10px;
   }
 }
 
