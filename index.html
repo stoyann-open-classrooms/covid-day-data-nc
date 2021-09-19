@@ -17,8 +17,19 @@
         <button class="nav-btn open-btn">
             <i class="fas fa-bars"></i>
         </button>
-        <h1>Infos corona virus Nouvelle-Calédonie</h1>
-
+        <h1>Infos</h1>
+        <div class="blockText">
+            <div class="letter C">C
+                <div class="atchoum"></div>
+                <div class="atchoumm"></div>
+                <div class="atchoummm"></div>
+            </div>
+            <div class="letter O">O</div>
+            <div class="letter R">R</div>
+            <div class="letter 0">O</div>
+            <div class="letter N">N</div>
+            <div class="letter A">A</div>
+        </div>
         <img src="./src/icones/masque.png" alt="">
 
     </header>
@@ -48,14 +59,14 @@
             <div class="report-header">
                 <div class="nb-de-cas">
                     <img class="report-icone" src="./src/icones/virus.png" alt="">
-                    <p class="nb">3350</p>
+                    <p class="nb" id="nb-de-cas-today">204</p>
                 </div>
                 <small>Cas positifs déclarer aujourd'hui</small>
             </div>
             <div class="report-header">
                 <div class="nb-de-cas">
                     <img class="report-icone" src="./src/icones/bed.png" alt="">
-                    <p class="nb">3350</p>
+                    <p class="nb">37</p>
 
                 </div>
                 <small>Personnes en réanimation</small>
@@ -63,9 +74,9 @@
             <div class="report-header">
                 <div class="nb-de-cas">
                     <img class="report-icone" src="./src/icones/death.png" alt="">
-                    <p class="nb">3350</p>
+                    <p class="nb">22</p>
                 </div>
-                <small>persone décédé</small>
+                <small>persone décédé depuis le 6/09/2021</small>
 
             </div>
 
@@ -73,7 +84,7 @@
                 <div class="report-header">
                     <div class="nb-de-cas">
                         <img class="report-icone" src="./src/icones/virus.png" alt="">
-                        <p class="nb" id="total-cas">000</p>
+                        <p class="nb" id="total-cas">3351</p>
                     </div>
                     <small>cas positif depuis le 6/09/2021</small>
 
@@ -81,7 +92,7 @@
                 <div class="report-header">
                     <div class="nb-de-cas">
                         <img class="report-icone" src="./src/icones/ambulance.png" alt="">
-                        <p class="nb">3350</p>
+                        <p class="nb">258</p>
                     </div>
                     <small>personnes hospitalisé</small>
 
@@ -89,7 +100,7 @@
                 <div class="report-header">
                     <div class="nb-de-cas">
                         <img class="report-icone" src="./src/icones/cure.png" alt="">
-                        <p class="nb-de-personne-guerie"></p>
+                        <p class="nb nb-de-personne-guerie">39</p>
                     </div>
                     <small>guerison</small>
 
@@ -102,7 +113,7 @@
             <div class="report-header">
                 <div class="nb-de-cas">
                     <img class="report-icone" src="./src/icones/dose1.png" alt="">
-                    <p class="nb">4020</p>
+                    <p class="nb">1901</p>
                 </div>
                 <small>premiere dose</small>
 
@@ -110,7 +121,7 @@
             <div class="report-header">
                 <div class="nb-de-cas">
                     <img class="report-icone" src="./src/icones/dose2.png" alt="">
-                    <p class="nb">559</p>
+                    <p class="nb">240</p>
                 </div>
                 <small>deuxieme dose</small>
 
@@ -118,7 +129,7 @@
             <div class="report-header">
                 <div class="nb-de-cas">
                     <img class="report-icone" src="./src/icones/dose3.png" alt="">
-                    <p class="nb">170</p>
+                    <p class="nb">57</p>
 
                     <small>Troisieme dose</small>
                 </div>
@@ -131,7 +142,7 @@
             <div class="report-header">
                 <div class="nb-de-cas">
                     <img class="report-icone" src="./src/icones/dose1.png" alt="">
-                    <p class="nb">4020</p>
+                    <p class="nb">127 184</p>
                 </div>
                 <small>premiere dose</small>
 
@@ -139,7 +150,7 @@
             <div class="report-header">
                 <div class="nb-de-cas">
                     <img class="report-icone" src="./src/icones/dose2.png" alt="">
-                    <p class="nb">559</p>
+                    <p class="nb">79 455</p>
                 </div>
                 <small>deuxieme dose</small>
 
@@ -147,12 +158,13 @@
             <div class="report-header">
                 <div class="nb-de-cas">
                     <img class="report-icone" src="./src/icones/dose3.png" alt="">
-                    <p class="nb">170</p>
+                    <p class="nb">932</p>
 
                 </div>
                 <small>Troisieme dose</small>
 
             </div>
+
 
         </div>
 
@@ -169,6 +181,14 @@
                 <a class="btn-tel" href="tel:+687050202"><i class="fas fa-phone-alt"></i>appeler le 05.05.02</a>
 
             </div>
+            <div class="urgence">N'appeller le 15 que en cas d'urgence</div>
+            <ul class="social">
+                <li><a href="https://github.com/stoyann-open-classrooms/covid-day-data-nc"> <i
+                            class=" fa fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/groups/208343036900696"><i class=" fa fa-facebook"></i></a>
+                </li>
+            </ul>
+
             <div class="donne">Les donées indiquées sur ce site dont issue des points presse du Gouvernement de la
                 Nouvelle-Calédonie
             </div>
@@ -188,11 +208,9 @@
                 <ul class="list">
                     <li><a href="#">Accueil</a></li>
                     <li><a class="active-link" href="./pages/contact.html">Où et comment ce faire vacciner</a></li>
-                    <li><a href="./pages/actualite.html">Actualités</a></li>
-                    <li><a href="./pages/bilanvaccinal.html">Bilan vaccinal</a></li>
-                    <li><a href="./pages/attestation.html">Attestation de déplacement</a></li>
-                    <li><a href="./pages/volontaires.html">Devenir volontaire</a></li>
-                    <li><a href="./pages/aPropos.html">Fight the covid -game</a></li>
+                    <li><a href="./pages/error.html">Actualités</a></li>
+                    <li><a href="./pages/error.html">Bilan vaccinal</a></li>
+                    <li><a href="./pages/error.html">Attestation de déplacement</a></li>
 
                 </ul>
             </div>

@@ -1,32 +1,21 @@
 {
   "dailyData": [
     {
-      "date": "18.09.2021",
-      "cas": 3350,
-      "guerison": 19,
-      "deces": 20,
-      "reanimation": 28,
-      "hospitalise": 28,
-      "doseInject": {
-        "first": 4020,
-        "second": 559,
-        "third": 170
-      }
-    },
-    {
+      "id": 1,
       "date": "19.09.2021",
-      "cas": 0,
-      "guerison": 0,
-      "deces": 0,
-      "reanimation": 0,
-      "hospitalise": 0,
+      "cas": 204,
+      "guerison": 20,
+      "deces": 2,
+      "reanimation": 37,
+      "hospitalise": 258,
       "doseInject": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+        "first": 1901,
+        "second": 240,
+        "third": 57
       }
     },
     {
+      "id": 2,
       "date": "20.09.2021",
       "cas": 0,
       "guerison": 0,

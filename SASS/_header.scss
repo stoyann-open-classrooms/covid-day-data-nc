@@ -3,6 +3,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 0 4rem 0;
   background-color: rgba(179, 179, 179, 0.329);
   img {
     width: 100px;
@@ -15,9 +16,10 @@ header {
   h1 {
     color: $blue;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 3rem;
     width: 90%;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
+    transform: translateY(-40px);
 
     @include bigPhone-and-higher {
       font-size: 2rem;
