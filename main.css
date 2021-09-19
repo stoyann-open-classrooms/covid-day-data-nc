@@ -671,6 +671,8 @@ footer .info-container .tel span {
 
 .vaccine h2 {
   color: white;
+  text-transform: uppercase;
+  font-size: 1.3rem;
 }
 
 .dose {
