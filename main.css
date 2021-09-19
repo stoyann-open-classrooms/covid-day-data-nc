@@ -156,6 +156,10 @@ li {
   padding-left: 2rem;
 }
 
+.img-nav {
+  width: 10rem;
+}
+
 @-webkit-keyframes grow {
   0% {
     -webkit-transform: scaleX(0);
@@ -322,9 +326,13 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: scenter;
+      -ms-flex-pack: scenter;
+          justify-content: scenter;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 3rem;
@@ -669,10 +677,145 @@ footer .info-container .tel span {
   color: #7fa4e0;
 }
 
+.first-dose {
+  font-size: 1.4rem;
+}
+
+.list-dose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 3rem;
+}
+
+.list-dose li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.list-dose .li-top img {
+  width: 10rem;
+}
+
+.list-dose .li-bottom {
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.vaccine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+}
+
 .vaccine h2 {
   color: white;
   text-transform: uppercase;
   font-size: 1.3rem;
+}
+
+.situation-vaccinal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+}
+
+.bilan-sanitaire {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.todayBilan {
+  border: 2px solid #7fa4e0;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.vaccine-board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border: 2px solid #7fa4e0;
+  -webkit-box-shadow: -5px -2px 15px -1px rgba(255, 255, 255, 0.705);
+          box-shadow: -5px -2px 15px -1px rgba(255, 255, 255, 0.705);
+  margin-top: 2rem;
+  border-radius: 20px;
+  margin-right: 5rem;
+  padding: 3rem;
+}
+
+.vaccine-board h2 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.vaccine-board h3 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.vaccine-board h3 span {
+  font-weight: bolder;
+}
+
+.vaccine-data {
+  font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  border: 2px solid #7fa4e0;
+  -webkit-box-shadow: -5px -2px 15px -1px rgba(255, 255, 255, 0.705);
+          box-shadow: -5px -2px 15px -1px rgba(255, 255, 255, 0.705);
+  border-radius: 20px;
+  text-align: center;
+  padding: 2rem;
+  width: 30%;
+  margin-right: 2rem;
+}
+
+.vaccine-data div {
+  margin-bottom: 1rem;
 }
 
 .dose {
@@ -698,18 +841,38 @@ svg {
 }
 
 .container-error {
-  position: relative;
+  position: fixed;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  left: 20%;
+  -webkit-transform: translate(-5%, -50%);
+          transform: translate(-5%, -50%);
   width: 100vw;
+}
+
+.container-error .info {
+  font-size: 2rem;
+}
+
+.return-index {
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  border: solid white 2px;
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+  top: 3rem;
+}
+
+.return-index:hover {
+  color: #7fa4e0;
+  border: solid #7fa4e0 2px;
 }
 
 .block {
   height: 200px;
   width: 200px;
-  margin-bottom: 8vh;
+  margin-bottom: 20vh;
   -webkit-animation: transformscale 10s linear infinite;
           animation: transformscale 10s linear infinite;
 }
@@ -908,136 +1071,73 @@ svg {
   height: 30px;
 }
 
-.blockText {
-  height: 100px;
-  width: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  top: 4rem;
-  position: absolute;
-}
-
-.letter {
-  height: 100%;
-  width: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: sans-serif;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 120px;
-  position: relative;
-  color: #cc3c3c;
-}
-
-@media screen and (min-width: 300px) {
-  .blockText {
-    width: 300px;
-  }
-  .letter {
-    font-size: 40px;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .blockText {
-    width: 400px;
-  }
-  .letter {
-    font-size: 40px;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .blockText {
-    width: 500px;
-  }
-  .letter {
-    font-size: 60px;
-  }
-}
-
-.atchoum {
-  position: absolute;
-  height: 3px;
-  width: 10px;
-  background: black;
-  left: 90%;
-  top: 37%;
-  border-radius: 3px;
-  -webkit-transform: rotateZ(-25deg);
-          transform: rotateZ(-25deg);
-  opacity: 0.5;
-}
-
-.atchoum:before {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 10px;
-  background: black;
-  -webkit-transform: translateX(120%);
-          transform: translateX(120%);
-}
-
-.atchoumm {
-  position: absolute;
-  height: 3px;
-  width: 10px;
-  background: black;
-  left: 90%;
-  top: 47%;
-  border-radius: 3px;
-  -webkit-transform: rotateZ(0deg);
-          transform: rotateZ(0deg);
-  opacity: 0.5;
-}
-
-.atchoumm:before {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 10px;
-  background: black;
-  -webkit-transform: translateX(120%);
-          transform: translateX(120%);
-}
-
-.atchoummm {
-  position: absolute;
-  height: 3px;
-  width: 10px;
-  background: black;
-  left: 90%;
-  top: 57%;
-  border-radius: 3px;
-  -webkit-transform: rotateZ(25deg);
-          transform: rotateZ(25deg);
-  opacity: 0.5;
-}
-
-.atchoummm:before {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 10px;
-  background: black;
-  -webkit-transform: translateX(120%);
-          transform: translateX(120%);
-}
-
 .info {
   color: #7fa4e0;
   font-size: 3rem;
   width: 80%;
+}
+
+.new-case {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.new-case img {
+  width: 40rem;
+}
+
+.new-case p {
+  color: #1d1d1d;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  position: absolute;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+
+.new-case p span {
+  display: block;
+  font-size: 4rem;
+  margin-top: 0.5rem;
+}
+
+.todayBilan {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.041);
+  -webkit-box-shadow: -5px -2px 15px -1px rgba(255, 255, 255, 0.705);
+          box-shadow: -5px -2px 15px -1px rgba(255, 255, 255, 0.705);
+}
+
+.todayBilan h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.other-today {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #7fa4e0;
+}
+
+.other-today img {
+  width: 10rem;
 }
 /*# sourceMappingURL=main.css.map */

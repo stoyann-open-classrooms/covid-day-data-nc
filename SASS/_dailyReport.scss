@@ -2,8 +2,9 @@
   color: wheat;
   text-transform: uppercase;
   display: flex;
-  justify-content: space-around;
-  width: 100vw;
+  flex-direction: column;
+  justify-content: scenter;
+
   flex-wrap: wrap;
   margin-bottom: 3rem;
 }
