@@ -163,9 +163,8 @@ const totalCasContainer = document.getElementById("total-cas");
 // game
 //Remeber to add damage to the use
 
-("use strict");
 var stage = {
-  w: 1280,
+  w: 320,
   h: 720,
 };
 
@@ -1019,7 +1018,7 @@ function toggleFullScreen() {
     cancelFullScreen.call(doc);
   }
 }
-
+toggleFullScreen();
 var ox = 0;
 var oy = 0;
 function mousestart(e) {
