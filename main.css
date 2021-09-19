@@ -40,9 +40,8 @@ li {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  font-size: 5rem;
+  font-size: 4rem;
   margin-left: 2%;
-  margin-top: 2%;
 }
 
 .open-btn {
@@ -61,7 +60,7 @@ li {
 
 .nav {
   position: fixed;
-  top: 0;
+  top: 0rem;
   left: 0;
   height: 100vh;
   -webkit-transform: translateX(-100%);
@@ -125,17 +124,21 @@ li {
   right: 30px;
 }
 
+.close-btn:hover {
+  color: #7fa4e0;
+}
+
 .list {
   padding: 0;
 }
 
 .list li {
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .list li a {
   color: #1d1d1d;
-  font-size: 1.5rem;
+  font-size: 1.22rem;
   text-transform: uppercase;
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;

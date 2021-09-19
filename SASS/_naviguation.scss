@@ -10,9 +10,8 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  font-size: 5rem;
+  font-size: 4rem;
   margin-left: 2%;
-  margin-top: 2%;
 }
 .open-btn {
   z-index: 1;
@@ -28,7 +27,7 @@
 
 .nav {
   position: fixed;
-  top: 0;
+  top: 0rem;
   left: 0;
   height: 100vh;
   transform: translateX(-100%);
@@ -72,18 +71,21 @@
   position: absolute;
   top: 40px;
   right: 30px;
+  &:hover {
+    color: $blue;
+  }
 }
 
 .list {
   padding: 0;
 }
 .list li {
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .list li a {
   color: $dark;
-  font-size: 1.5rem;
+  font-size: 1.22rem;
   text-transform: uppercase;
   transition: color 0.3s ease-out;
 
