@@ -170,6 +170,18 @@ li {
   }
 }
 
+@-webkit-keyframes anim {
+  100% {
+    stroke-dashoffset: 184;
+  }
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 184;
+  }
+}
+
 header {
   width: 100%;
   display: -webkit-box;
@@ -611,6 +623,76 @@ footer .info-container .tel span {
 .social i {
   margin-right: 10px;
   font-size: 2rem;
+}
+
+.skill {
+  margin-top: 4rem;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.skill .outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  padding: 20px;
+}
+
+.skill .outer .inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px white, 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px white, 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+#number {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #7fa4e0;
+}
+
+.vaccine h2 {
+  color: white;
+}
+
+.dose {
+  color: #7fa4e0;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  -webkit-animation: anim 2s linear forwards;
+          animation: anim 2s linear forwards;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .container-error {
