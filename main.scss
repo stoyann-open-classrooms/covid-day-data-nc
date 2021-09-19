@@ -204,3 +204,147 @@ footer {
   bottom: 2rem;
   margin: auto;
 }
+
+// WORLD
+
+// body {
+//   margin: 0px;
+//   padding: 0px;
+//   color: white;
+//   background-color: #1e1f26;
+//   text-align: center;
+//   overflow: hidden;
+// }
+
+// #turn {
+//   width: 100px;
+// }
+
+// #progress {
+//   width: 80px;
+// }
+
+// .table {
+//   width: 1000px;
+//   height: 80px;
+//   border: none;
+// }
+
+// .table th {
+//   background-color: #5a6074;
+// }
+
+// .table td {
+//   text-align: right;
+//   padding-right: 8px;
+//   padding-left: 8px;
+// }
+
+// .table th,
+// .table td {
+//   border: solid 2px #5a6074;
+//   border-radius: 5px;
+// }
+
+// #sur-th {
+//   background-color: #1e1f26;
+// }
+
+// #sur-th,
+// #sur-td {
+//   border: none;
+// }
+
+// #sur-td {
+//   background-color: #5a6074;
+//   text-align: center;
+//   border-radius: 5px;
+//   font-weight: bold;
+// }
+
+// .red {
+//   color: red;
+// }
+
+// .yellow {
+//   color: yellow;
+// }
+
+// select {
+//   border: none;
+//   border-radius: 5px;
+//   background-color: #5a6074;
+//   color: white;
+//   width: 300px;
+//   height: 40px;
+//   font-weight: bold;
+//   padding-left: 6px;
+// }
+
+// select:hover {
+//   cursor: pointer;
+//   color: #d0d0d2;
+// }
+
+// .middle {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+// @media screen and (orientation: portrait) {
+//   .rotate {
+//     transform: rotate(90deg);
+//   }
+
+//   .table {
+//     width: 350px;
+//     height: 35px;
+//   }
+
+//   select {
+//     width: 130px;
+//     height: 25px;
+//   }
+
+//   h1 {
+//     font-size: 20px;
+//   }
+
+//   h2 {
+//     font-size: 15px;
+//   }
+// }
+
+// @media screen and (max-height: 500px) {
+//   .table {
+//     width: 350px;
+//     height: 35px;
+//   }
+
+//   select {
+//     width: 130px;
+//     height: 25px;
+//   }
+
+//   h1 {
+//     font-size: 20px;
+//   }
+
+//   h2 {
+//     font-size: 15px;
+//   }
+// }
+
+body {
+  background: #111;
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  background: #000;
+  display: block;
+  cursor: none;
+  // transform: rotate(-80deg);
+}

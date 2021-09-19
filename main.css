@@ -591,4 +591,16 @@ footer .info-container .emergency {
   bottom: 2rem;
   margin: auto;
 }
+
+body {
+  background: #111;
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  background: #000;
+  display: block;
+  cursor: none;
+}
 /*# sourceMappingURL=main.css.map */
