@@ -12,74 +12,141 @@
 </head>
 
 <body>
+
+    <nav class="naviguation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icone"><i class="fas fa-home"></i></span>
+                    <span class="title">Accueil</span>
+                </a>
+            </li>
+            <li>
+                <a href="./pages/error.html">
+                    <span class="icone"><i class="fas fa-newspaper"></i></span>
+                    <span class="title">Actualités</span>
+                </a>
+            </li>
+            <li>
+                <a href="./pages/error.html">
+                    <span class="icone"><i class="fas fa-chart-bar"></i></span>
+                    <span class="title">Bilan Vaccinal</span>
+                </a>
+
+            </li>
+            <li>
+                <a href="./pages/error.html">
+                    <span class="icone"><i class="fas fa-syringe"></i></span>
+                    <span class="title">Où et comment ce faire vacciner</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="./pages/error.html">
+                    <span class="icone"><i class="fas fa-vial"></i></span>
+                    <span class="title">Où et comment ce faire tester</span>
+                </a>
+            </li>
+            <li>
+                <a href="./pages/error.html">
+                    <span class="icone"><i class="fas fa-chart-pie"></i></span>
+                    <span class="title">Statistiques</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="./pages/error.html">
+                    <span class="icone"><i class="fas fa-graduation-cap"></i></span>
+                    <span class="title">Continuté pedagogique</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
     <header>
-        <button class="nav-btn open-btn">
-            <i class="fas fa-bars"></i>
-        </button>
-        <h1>INFO COVID NOUVELLE-CALEDONIE</h1>
-        <img src="./src/icones/masque.png" alt="">
+        <h1>Infos Coronavirus Nouvelle-calédonie</h1>
+        <div class="toggle"></div>
     </header>
 
     <main>
 
-
-        <div class="testimonial-container">
-            <div class="progress-bar"></div>
-            <p class="testimonial">
-                « Ce combat est le combat pour la vie. »
-            </p>
-            <div class="user">
-
-                <div class="user-details">
-                    <h4 class="username">Louis Mapou président du 17eme gouvernement</h4>
-                    <p class="role">Point presse du 17.09.2021</p>
-                </div>
+        <section class="today-bilan-container">
+            <div class="title">
+                <h2> Situation sannitaires du 20/09/2021</h2>
+                <small>dérnieres mises a jour à 15H37</small>
             </div>
-            <div class="user"> <img
-                    src="https://i1.wp.com/www.radio1.pf/cms/wp-content/uploads/2021/07/Louis-Mapou.jpg?fit=800%2C511&ssl=1"
-                    alt="user" class="user-image" /></div>
-        </div>
-        <div class="bilan-sanitaire">
-            <div class="todayBilan">
-                <h2>Bilan sannitaire de la journée du 19/09/2021</h2>
+            <div class="container-cards">
 
-                <div class="new-case">
-                    <p>nouveaux cas <br> <span> 204</span><br>
-                        en 24Heures </p>
-                    <img src="./src/icones/virus.png" alt="">
-                </div>
-                <div class="other-today">
-                    <div>
-                        <p>Décés</p>
-                        <img src="./src/icones/death.png" alt="">
-                        <p>6</p>
 
+                <div class="today-bilan-cards">
+                    <div class=" card new-cases">
+                        <img src="./src/icones/virus.png" alt="">
+                        <h3>Nouveaux cas</h3>
+                        <p class="number">505</p>
+                        <small>dans les dernieres 24h</small>
                     </div>
-                    <div>
-                        <p>Réanimation</p>
+                    <div class="active-cards">
+                        <h3>cas confirmée</h3>
+                        <p class="number">4086</p>
+                        <small>depuis le 06/09/2021</small>
+                    </div>
+                </div>
+                <div class="today-bilan-cards">
+                    <div class=" card new-cases">
                         <img src="./src/icones/bed.png" alt="">
-                        <p>37</p>
-                    </div>
-                    <div>
-                        <p>Hospitalisés</p>
-                        <img src="./src/icones/ambulance.png" alt="">
-                        <p>258</p>
 
+                        <h3>réanimation</h3>
+                        <p class="number">39</p>
+                        <small>dans les dernieres 24h</small>
                     </div>
-                    <div>
-                        <p>Guerries</p>
+                </div>
+                <div class="today-bilan-cards">
+                    <div class=" card new-cases">
+                        <img src="./src/icones/virus.png" alt="">
+                        <h3>décès</h3>
+                        <p class="number">3</p>
+                        <small>dans les dernieres 24h</small>
+                    </div>
+                    <div class="active-cards">
+                        <h3>décès</h3>
+                        <p class="number">25</p>
+                        <small>depuis le 06/09/2021</small>
+                    </div>
+                </div>
+                <div class="today-bilan-cards">
+                    <div class=" card new-cases">
+                        <img src="./src/icones/ambulance.png" alt="">
+
+                        <h3>Hospitalisations</h3>
+                        <p class="number">260</p>
+                        <small>dans les dernieres 24h</small>
+                    </div>
+                </div>
+                <div class="today-bilan-cards">
+                    <div class=" card new-cases">
                         <img src="./src/icones/cure.png" alt="">
-                        <p>39</p>
+
+                        <h3>Guerrison</h3>
+                        <p class="number">240</p>
+                        <small>dans les dernieres 24h</small>
+                    </div>
+                </div>
+                <div class="today-bilan-cards">
+                    <div class=" card new-cases">
+                        <img src="./src/icones/seringue.png" alt="">
+
+                        <h3> vaccination </h3>
+                        <p class="number">152</p>
+                        <small>doses inctées dans les dernieres 24h</small>
                     </div>
                 </div>
             </div>
-
-
-        </div>
-
-        <div class="situation-vaccinal">
-            <div class="vaccine-board">
-                <h2>Personnes vaccinnées <span>*</span></h2>
+            <div class="title">
+                <h2> évolution du nombres de personnes vacciner</h2>
+                <small>dérnieres mises a jour à 15H37</small>
+            </div>
+            <section class="vaccine-board">
                 <div class="skill">
                     <div class="outer">
                         <div class="inner">
@@ -90,10 +157,9 @@
                         </div>
                     </div>
 
-
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                         <defs>
-                            <lineargradient id="GradientColor">
+                            <lineargradient id="GradientColorBis">
                                 <stop offset="-25%" stop-color="#68d9a4" />
                                 <stop offset="100%" stop-color="#7fa4e0" />
                             </lineargradient>
@@ -106,13 +172,12 @@
                 <div class="skill">
                     <div class="outer">
                         <div class="inner">
-                            <div id="number">
-                                33.34%
+                            <div id="numberBis">
+                                54.96%
                             </div>
-                            <div class="dose">2eme dose</div>
+                            <div class="dose">2eme Dose</div>
                         </div>
                     </div>
-
 
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                         <defs>
@@ -126,153 +191,12 @@
 
 
                 </div>
-                <h3>* sur l'ensemble de la population <span>vaccinable</span></h3>
-
-            </div>
-            <div class="vaccine-data">
-
-                <div>Nombres de doses injectée aujourd'hui</div>
-                <ul class="list-dose">
-                    <li>
-                        <div class="li-top">
-                            <img src="./src/icones/dose1.png" alt="">
-
-                            <p>1901</p>
-                        </div>
-                        <div class="li-bottom">
-
-                        </div>
-
-
-                    </li>
-                    <li>
-                        <div class="li-top">
-                            <img src="./src/icones/dose2.png" alt="">
-
-                            <p>240</p>
-                        </div>
-                        <div class="li-bottom">
-
-                        </div>
-
-
-                    </li>
-                    <li>
-                        <div class="li-top">
-                            <img src="./src/icones/dose3.png" alt="">
-
-                            <p>57</p>
-                        </div>
-                        <div class="li-bottom">
-
-                        </div>
-
-
-                    </li>
-                </ul>
-
-
-            </div>
-            <div class="vaccine-data">
-
-                <div>Depuis le debut de la campagne</div>
-                <ul class="list-dose">
-                    <li>
-                        <div class="li-top">
-                            <img src="./src/icones/dose1.png" alt="">
-
-                            <p>127184</p>
-                        </div>
-                        <div class="li-bottom">
-
-                        </div>
-
-
-                    </li>
-                    <li>
-                        <div class="li-top">
-                            <img src="./src/icones/dose2.png" alt="">
-
-                            <p>79455</p>
-                        </div>
-                        <div class="li-bottom">
-
-                        </div>
-
-
-                    </li>
-                    <li>
-                        <div class="li-top">
-                            <img src="./src/icones/dose3.png" alt="">
-
-                            <p>932</p>
-                        </div>
-                        <div class="li-bottom">
-
-                        </div>
-
-
-                    </li>
-                </ul>
-
-
-            </div>
-
-
-        </div>
-
-
+            </section>
+        </section>
 
 
 
     </main>
-
-
-
-
-    <footer>
-        <div class="header-contact-tel">
-            <div class="tel-box">
-                <div>Question relative ou COVID ou en cas de symptômes</div>
-                <a class="btn-tel" href="tel:+687050202"><i class="fas fa-phone-alt"></i>appeler le 05.05.02</a>
-
-            </div>
-            <div class="urgence">N'appeller le 15 que en cas d'urgence</div>
-            <ul class="social">
-                <li><a href="https://github.com/stoyann-open-classrooms/covid-day-data-nc"> <i
-                            class=" fa fa-github"></i></a></li>
-                <li><a href="https://www.facebook.com/groups/208343036900696"><i class=" fa fa-facebook"></i></a>
-                </li>
-            </ul>
-
-            <div class="donne">Les donées indiquées sur ce site dont issue des points presse du Gouvernement de la
-                Nouvelle-Calédonie
-            </div>
-        </div>
-    </footer>
-
-
-    <div class="nav nav-black">
-        <div class="nav nav-red">
-            <div class="nav  nav-white">
-                <button class="nav-btn close-btn">
-                    <i class="fas fa-times"></i>
-                </button>
-                <img class="img-nav" src="./src/icones/masque.png" alt="">
-
-                <ul class="list">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a class="active-link" href="./pages/contact.html">Où et comment ce faire vacciner</a></li>
-                    <li><a href="./pages/error.html">Actualités</a></li>
-                    <li><a href="./pages/error.html">Bilan vaccinal</a></li>
-                    <li><a href="./pages/error.html">Attestation de déplacement</a></li>
-
-                </ul>
-
-            </div>
-        </div>
-    </div>
-
 
 
     <script type="module" src="./main.js"></script>
