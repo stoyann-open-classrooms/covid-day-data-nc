@@ -407,6 +407,10 @@ main {
   font-weight: bolder;
 }
 
+.banner-error {
+  width: 90%;
+}
+
 .container-error {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -533,9 +537,21 @@ footer p {
   margin-bottom: 5rem;
 }
 
+@media screen and (max-width: 29rem) {
+  .txt-articles {
+    margin-top: 2rem;
+  }
+}
+
 .txt-articles h1 {
   line-height: 4rem;
   text-align: center;
+}
+
+@media screen and (max-width: 29rem) {
+  .txt-articles h1 {
+    font-size: 2rem;
+  }
 }
 
 .txt-articles .question {

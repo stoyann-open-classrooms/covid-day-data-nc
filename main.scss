@@ -92,7 +92,9 @@ main {
   color: $primary;
   font-weight: bolder;
 }
-
+.banner-error {
+  width: 90%;
+}
 // vaccine-board {
 //   // display: flex;
 //   // flex-direction: column;
@@ -312,10 +314,16 @@ footer {
   width: 90%;
   margin-top: 28rem;
   margin-bottom: 5rem;
+  @include bigPhone-and-higher {
+    margin-top: 2rem;
+  }
 
   h1 {
     line-height: 4rem;
     text-align: center;
+    @include bigPhone-and-higher {
+      font-size: 2rem;
+    }
   }
 
   .question {
