@@ -372,6 +372,21 @@ main {
   transition: opacity 0.4s ease-out;
 }
 
+.active-cards ul {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.active-cards ul li {
+  font-weight: normal;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.active-cards ul li strong {
+  color: #ff3939;
+}
+
 .active-cards p {
   width: 80%;
 }
@@ -436,6 +451,13 @@ main {
   position: relative;
   max-width: 400px;
   width: 100%;
+}
+
+.today-bilan-cards i {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #7fa4e0;
+  text-align: center;
 }
 
 .today-bilan-cards img {

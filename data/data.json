@@ -17,15 +17,16 @@
     {
       "id": 2,
       "date": "20.09.2021",
-      "cas": 0,
-      "guerison": 0,
-      "deces": 0,
-      "reanimation": 0,
-      "hospitalise": 0,
+      "cas": 505,
+      "casTotal": 4086,
+      "guerisonTotal": 39,
+      "deces": 25,
+      "reanimation": 39,
+      "hospitalise": 260,
       "doseInject": {
-        "first": 0,
-        "second": 0,
-        "third": 0
+        "first": 138,
+        "second": 7,
+        "third": 7
       }
     }
   ]
