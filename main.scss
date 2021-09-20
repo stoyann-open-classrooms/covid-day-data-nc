@@ -289,7 +289,7 @@ footer {
 
   .article {
     background-color: rgb(216, 216, 216);
-    height: 300px;
+    height: 380px;
     color: $dark;
     width: 80%;
     border-radius: 2rem;
@@ -320,6 +320,11 @@ footer {
 
     .article-body {
       padding: 2rem;
+      font-size: 1.15rem;
+      line-height: 2.5rem;
+      strong {
+        font-size: 1.8rem;
+      }
       h3 {
         margin-bottom: 1rem;
       }
