@@ -6,7 +6,7 @@
 @import "./SASS/header";
 
 main {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,12 +31,13 @@ main {
 }
 .today-bilan-container {
   // margin-left: 10%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  font-size: 1.5rem;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // text-align: center;
+  // flex-direction: column;
+  // font-size: 1.5rem;
+  // align-items: center;
+  margin-left: 30%;
   .title {
     position: relative;
     text-transform: uppercase;
@@ -53,6 +54,7 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 150px;
   @include bigPhone-and-higher {
     flex-direction: column;
     margin-left: 60px;
@@ -62,12 +64,13 @@ main {
   color: $dark;
   margin-top: 5rem;
   width: 200px;
-  margin-right: 15px;
   background-color: white;
-
+  flex-direction: column;
   padding: 2rem;
   border-radius: 5px;
   position: relative;
+  margin-right: 30px;
+
   img {
     width: 10rem;
     margin-bottom: 2rem;
@@ -81,17 +84,16 @@ main {
 }
 
 vaccine-board {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-around;
+  // align-items: center;
   width: 100%;
   border: 2px solid $blue;
   box-shadow: -5px -2px 15px -1px rgba(255, 255, 255, 0.705);
   margin-top: 2rem;
   border-radius: 20px;
 
-  padding: 3rem;
   h2 {
     color: white;
     font-size: 2rem;
@@ -108,9 +110,8 @@ vaccine-board {
   }
 }
 .vaccine-board {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+  // display: flex;
+  // justify-content: space-around;
 
   @include bigPhone-and-higher {
     flex-direction: column;
@@ -138,9 +139,10 @@ svg {
 
 .skill {
   margin-top: 4rem;
-  width: 160px;
-  height: 160px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 4rem;
+  top: -100px;
 
   // background: $blue;
   position: relative;
@@ -226,9 +228,9 @@ footer {
 }
 
 .title {
+  text-align: center;
   @include bigPhone-and-higher {
     font-size: 0.6rem;
-    margin-left: 10rem;
   }
 }
 
