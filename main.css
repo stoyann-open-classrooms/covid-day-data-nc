@@ -617,8 +617,16 @@ footer p {
 }
 
 .calendar {
-  width: 80%;
-  margin-bottom: 5rem;
+  width: 70%;
+  margin-top: 3rem;
+  margin-left: 20%;
+}
+
+.exemple {
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 2rem;
+  color: #7fa4e0;
 }
 
 .bilan-dr {
@@ -629,5 +637,34 @@ footer p {
   padding: 2rem;
   border-radius: 2rem;
   border: solid 2px #ff3939;
+}
+
+.text-continuite {
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+.text-continuite span {
+  color: #ff3939;
+}
+
+.text-continuite h2 {
+  text-align: center;
+  color: #7fa4e0;
+  margin-bottom: 2rem;
+  border: 2px solid #7fa4e0;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.text-continuite li {
+  margin: 1rem 0;
+  line-height: 2rem;
+  margin: 2rem 0;
+}
+
+.text-continuite li i {
+  margin-right: 0.8rem;
+  color: #68d9a4;
 }
 /*# sourceMappingURL=main.css.map */
