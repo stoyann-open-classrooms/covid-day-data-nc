@@ -167,7 +167,7 @@ li {
 header {
   background: #7fa4e0;
   height: 20vh;
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,12 +181,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (max-width: 29rem) {
-  header {
-    margin-left: 3rem;
-  }
 }
 
 header .icone-content {
@@ -333,6 +327,7 @@ header img {
 
 main {
   width: 100%;
+  max-width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,6 +338,10 @@ main {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+}
+
+.active-link {
+  background-color: #68d9a4;
 }
 
 .active-cards {

@@ -8,12 +8,15 @@
 
 main {
   width: 100%;
+  max-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
-
+.active-link {
+  background-color: $green;
+}
 .active-cards {
   display: flex;
   flex-direction: column;
