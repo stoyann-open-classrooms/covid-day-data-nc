@@ -548,7 +548,7 @@ footer p {
 
 .page-content .article {
   background-color: #d8d8d8;
-  height: 380px;
+  height: 400px;
   color: #1d1d1d;
   width: 80%;
   border-radius: 2rem;
@@ -574,9 +574,8 @@ footer p {
 }
 
 .page-content .article .article-sort {
-  font-size: 2rem;
+  font-size: 1.64rem;
   color: #7fa4e0;
-  margin-bottom: 2rem;
 }
 
 .page-content .article .article-sort i {
