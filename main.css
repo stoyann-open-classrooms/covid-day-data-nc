@@ -407,6 +407,37 @@ main {
   font-weight: bolder;
 }
 
+.container-error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  height: 100vh;
+}
+
+.container-error a {
+  border: 2px white solid;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 2rem;
+}
+
+.container-error a:hover {
+  background-color: #7fa4e0;
+  color: #1d1d1d;
+  border: 2px #1d1d1d solid;
+}
+
 footer {
   font-size: 1.3rem;
   background-color: rgba(99, 99, 212, 0.226);
@@ -498,7 +529,7 @@ footer p {
   font-size: 1.3rem;
   line-height: 2rem;
   width: 90%;
-  margin-top: 40rem;
+  margin-top: 28rem;
   margin-bottom: 5rem;
 }
 
@@ -528,7 +559,17 @@ footer p {
 }
 
 .calendar {
-  width: 90%;
+  width: 80%;
   margin-bottom: 5rem;
+}
+
+.bilan-dr {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  line-height: 3rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: solid 2px #ff3939;
 }
 /*# sourceMappingURL=main.css.map */

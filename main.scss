@@ -186,27 +186,27 @@ main {
 //   color: $blue;
 // }
 
-// .container-error {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   font-size: 2rem;
-//   height: 100vh;
+.container-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  height: 100vh;
 
-//   a {
-//     border: 2px white solid;
-//     padding: 2rem;
-//     margin-top: 3rem;
-//     border-radius: 2rem;
+  a {
+    border: 2px white solid;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 2rem;
 
-//     &:hover {
-//       background-color: $blue;
-//       color: $dark;
-//       border: 2px $dark solid;
-//     }
-//   }
-// }
+    &:hover {
+      background-color: $blue;
+      color: $dark;
+      border: 2px $dark solid;
+    }
+  }
+}
 
 footer {
   font-size: 1.3rem;
@@ -310,7 +310,7 @@ footer {
   font-size: 1.3rem;
   line-height: 2rem;
   width: 90%;
-  margin-top: 40rem;
+  margin-top: 28rem;
   margin-bottom: 5rem;
 
   h1 {
@@ -340,6 +340,16 @@ footer {
 }
 
 .calendar {
-  width: 90%;
+  width: 80%;
   margin-bottom: 5rem;
+}
+
+.bilan-dr {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  line-height: 3rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: solid 2px $primary;
 }
