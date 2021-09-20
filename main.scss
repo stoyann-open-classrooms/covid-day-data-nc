@@ -4,6 +4,7 @@
 @import "./SASS/naviguation";
 @import "./SASS/animation";
 @import "./SASS/header";
+@import "./SASS/testimonial";
 
 main {
   width: 100%;
@@ -252,3 +253,48 @@ footer {
 //   justify-content: center;
 //   align-items: center;
 // }
+
+.page-content {
+  width: 100%;
+  margin-left: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+
+  .article {
+    background-color: rgb(216, 216, 216);
+    height: 250px;
+    color: $dark;
+    width: 80%;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+    .article-img {
+      background-color: grey;
+      height: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2rem 2rem 0 0;
+      }
+    }
+
+    .article-body {
+      padding: 1.4rem;
+      h3 {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.calendar {
+  width: 90%;
+  margin-bottom: 5rem;
+}

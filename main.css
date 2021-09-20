@@ -194,6 +194,103 @@ header img {
   width: 20rem;
 }
 
+.testimonial-container {
+  color: white;
+  border: 3px solid #7fa4e0;
+  border-radius: 15px;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 200px;
+  margin: 2rem 3% 3rem 3%;
+}
+
+.testimonial {
+  text-align: center;
+  width: 720px;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 29rem) {
+  .testimonial {
+    width: 315px;
+  }
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-top: 2rem;
+  left: 0;
+}
+
+.user .user-image {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.user .user-details {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.user .username {
+  margin: 0;
+  margin-bottom: 0.8rem;
+}
+
+.user .role {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 76.8rem) {
+  .user .role {
+    font-size: 0.4rem;
+  }
+}
+
+.progress-bar {
+  background-color: rgba(255, 10, 10, 0.178);
+  height: 4px;
+  width: 100%;
+  -webkit-animation: grow 10s linear infinite;
+          animation: grow 10s linear infinite;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 76.8rem) {
+  .testimonial-container {
+    padding: 10px 10px;
+  }
+}
+
 main {
   width: 100%;
   display: -webkit-box;
@@ -327,5 +424,66 @@ footer {
 
 footer p {
   font-size: 1rem;
+}
+
+.page-content {
+  width: 100%;
+  margin-left: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+
+.page-content .article {
+  background-color: #d8d8d8;
+  height: 250px;
+  color: #1d1d1d;
+  width: 80%;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.page-content .article:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.page-content .article .article-img {
+  background-color: grey;
+  height: 50%;
+}
+
+.page-content .article .article-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.page-content .article .article-body {
+  padding: 1.4rem;
+}
+
+.page-content .article .article-body h3 {
+  margin-bottom: 2rem;
+}
+
+.calendar {
+  width: 90%;
+  margin-bottom: 5rem;
 }
 /*# sourceMappingURL=main.css.map */

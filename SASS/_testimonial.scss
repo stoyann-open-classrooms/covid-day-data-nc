@@ -4,6 +4,7 @@
   border-radius: 15px;
   font-size: 1rem;
   display: flex;
+  width: 75%;
 
   flex-direction: column;
   align-items: center;
@@ -17,7 +18,7 @@
   text-align: center;
   width: 720px;
   padding: 1rem;
-  font-size: 1.45rem;
+  font-size: 1rem;
   @include bigPhone-and-higher {
     width: 315px;
   }
@@ -28,15 +29,15 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-top: 1rem;
+  margin-top: 2rem;
 
   left: 0;
 }
 
 .user .user-image {
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
+  height: 30px;
+  width: 30px;
   object-fit: cover;
 }
 
