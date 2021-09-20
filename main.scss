@@ -255,13 +255,22 @@ footer {
 // }
 
 .page-content {
+  position: relative;
   width: 100%;
   margin-left: 60px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
   margin-top: 5rem;
+
+  img {
+    position: absolute;
+    height: 400px;
+    top: -10%;
+    width: 100%;
+  }
 
   .article {
     background-color: rgb(216, 216, 216);
@@ -271,26 +280,62 @@ footer {
     border-radius: 2rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out;
+    cursor: pointer;
     &:hover {
       transform: scale(1.1);
     }
     .article-img {
       background-color: grey;
       height: 50%;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 2rem 2rem 0 0;
+    }
+    .article-sort {
+      font-size: 2rem;
+      color: $blue;
+      margin-bottom: 2rem;
+      i {
+        margin-right: 1rem;
       }
     }
 
     .article-body {
       padding: 1.4rem;
       h3 {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
       }
     }
+  }
+}
+
+.txt-articles {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  width: 90%;
+  margin-top: 40rem;
+  margin-bottom: 5rem;
+
+  h1 {
+    line-height: 4rem;
+    text-align: center;
+  }
+
+  .question {
+    font-size: 2rem;
+    color: $green;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+    line-height: 2rem;
+    margin-top: 2rem;
+  }
+
+  .reponses {
+    color: $dark;
+    background-color: white;
+    padding: 1.3rem;
+    border-radius: 1rem;
+    line-height: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px 0;
   }
 }
 

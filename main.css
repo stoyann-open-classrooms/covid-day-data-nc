@@ -427,6 +427,7 @@ footer p {
 }
 
 .page-content {
+  position: relative;
   width: 100%;
   margin-left: 60px;
   display: -webkit-box;
@@ -442,7 +443,15 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 100vh;
   margin-top: 5rem;
+}
+
+.page-content img {
+  position: absolute;
+  height: 400px;
+  top: -10%;
+  width: 100%;
 }
 
 .page-content .article {
@@ -454,6 +463,7 @@ footer p {
   margin-bottom: 3rem;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  cursor: pointer;
 }
 
 .page-content .article:hover {
@@ -466,12 +476,14 @@ footer p {
   height: 50%;
 }
 
-.page-content .article .article-img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 2rem 2rem 0 0;
+.page-content .article .article-sort {
+  font-size: 2rem;
+  color: #7fa4e0;
+  margin-bottom: 2rem;
+}
+
+.page-content .article .article-sort i {
+  margin-right: 1rem;
 }
 
 .page-content .article .article-body {
@@ -479,7 +491,40 @@ footer p {
 }
 
 .page-content .article .article-body h3 {
+  margin-bottom: 1rem;
+}
+
+.txt-articles {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  width: 90%;
+  margin-top: 40rem;
+  margin-bottom: 5rem;
+}
+
+.txt-articles h1 {
+  line-height: 4rem;
+  text-align: center;
+}
+
+.txt-articles .question {
+  font-size: 2rem;
+  color: #68d9a4;
   margin-bottom: 2rem;
+  font-weight: bolder;
+  line-height: 2rem;
+  margin-top: 2rem;
+}
+
+.txt-articles .reponses {
+  color: #1d1d1d;
+  background-color: white;
+  padding: 1.3rem;
+  border-radius: 1rem;
+  line-height: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+  margin: 10px 0;
 }
 
 .calendar {
