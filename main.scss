@@ -287,28 +287,27 @@ footer {
   min-height: 100vh;
   margin-top: 5rem;
 
-  img {
-    position: absolute;
-    height: 400px;
-    top: -10%;
-    width: 100%;
-  }
-
   .article {
     background-color: rgb(216, 216, 216);
-    height: 250px;
+    height: 300px;
     color: $dark;
     width: 80%;
     border-radius: 2rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out;
     cursor: pointer;
-    &:hover {
-      transform: scale(1.1);
-    }
+
     .article-img {
       background-color: grey;
-      height: 50%;
+      height: auto;
+      width: 100%;
+      height: 60%;
+      .ar-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2rem 2rem 0 0;
+      }
     }
     .article-sort {
       font-size: 2rem;
@@ -320,7 +319,7 @@ footer {
     }
 
     .article-body {
-      padding: 1.4rem;
+      padding: 2rem;
       h3 {
         margin-bottom: 1rem;
       }
@@ -332,7 +331,7 @@ footer {
   font-size: 1.3rem;
   line-height: 2rem;
   width: 90%;
-  margin-top: 28rem;
+  margin-top: 2rem;
   margin-bottom: 5rem;
   @include bigPhone-and-higher {
     margin-top: 2rem;
