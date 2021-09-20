@@ -1,11 +1,15 @@
 header {
   background: $blue;
   height: 12vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   h1 {
     text-transform: uppercase;
+    @include bigPhone-and-higher {
+      font-size: 0.8rem;
+    }
   }
   img {
     width: 20rem;

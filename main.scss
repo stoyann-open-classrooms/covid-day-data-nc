@@ -10,6 +10,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .active-cards {
@@ -29,7 +30,7 @@ main {
   }
 }
 .today-bilan-container {
-  margin-left: 10%;
+  // margin-left: 10%;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -50,15 +51,20 @@ main {
 }
 .container-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 80%;
+  @include bigPhone-and-higher {
+    flex-direction: column;
+    margin-left: 60px;
+  }
 }
 .today-bilan-cards {
   color: $dark;
   margin-top: 5rem;
-  width: 30%;
+  width: 200px;
+  margin-right: 15px;
   background-color: white;
+
   padding: 2rem;
   border-radius: 5px;
   position: relative;
@@ -105,6 +111,11 @@ vaccine-board {
   width: 100%;
   display: flex;
   justify-content: space-around;
+
+  @include bigPhone-and-higher {
+    flex-direction: column;
+    margin-left: 25rem;
+  }
 }
 .dose {
   color: $blue;
@@ -130,7 +141,7 @@ svg {
   width: 160px;
   height: 160px;
   margin-bottom: 4rem;
-  margin-right: 5rem;
+
   // background: $blue;
   position: relative;
   .outer {
@@ -214,13 +225,16 @@ footer {
   }
 }
 
-.top {
+.title {
+  @include bigPhone-and-higher {
+    font-size: 0.6rem;
+    margin-left: 10rem;
+  }
+}
+
+.container-vacc {
   width: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  img {
-    width: 80rem;
-  }
 }
