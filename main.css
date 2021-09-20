@@ -103,7 +103,6 @@ li {
   right: 0;
   width: 60px;
   height: 60px;
-  background: #7fa4e0;
   cursor: pointer;
 }
 
@@ -184,6 +183,12 @@ header {
           align-items: center;
 }
 
+@media screen and (max-width: 29rem) {
+  header {
+    margin-left: 3rem;
+  }
+}
+
 header .icone-content {
   width: auto;
   -webkit-box-pack: center;
@@ -198,8 +203,20 @@ header .icone-content {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 29rem) {
+  header .icone-content {
+    margin-top: 3rem;
+  }
+}
+
 header .icone-content img {
   width: 8rem;
+}
+
+@media screen and (max-width: 29rem) {
+  header .icone-content img {
+    width: 2.5rem;
+  }
 }
 
 header h1 {
