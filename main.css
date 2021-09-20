@@ -167,7 +167,7 @@ li {
 
 header {
   background: #7fa4e0;
-  height: 12vh;
+  height: 20vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,13 +175,36 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+header .icone-content {
+  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f3ecec;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+header .icone-content img {
+  width: 8rem;
+}
+
 header h1 {
   text-transform: uppercase;
+  font-size: 2.3rem;
 }
 
 @media screen and (max-width: 29rem) {
