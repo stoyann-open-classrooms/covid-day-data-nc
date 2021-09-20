@@ -413,9 +413,11 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-right: 1rem;
   padding: 1rem;
   border-radius: 5px;
   position: relative;
+  max-width: 400px;
   width: 100%;
 }
 
