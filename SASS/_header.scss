@@ -5,6 +5,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+
   h1 {
     text-transform: uppercase;
     @include bigPhone-and-higher {
