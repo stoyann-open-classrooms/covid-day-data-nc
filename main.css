@@ -425,6 +425,9 @@ main {
       flex-wrap: wrap;
   width: 75%;
   margin-left: 60px;
+  margin-top: 2rem;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   margin-bottom: 5rem;
 }
 
@@ -889,6 +892,21 @@ circle {
 }
 
 .btn-link:hover {
+  background-color: #7fa4e0;
+}
+
+.btn-collect {
+  display: block;
+  border: 2px #7fa4e0 solid;
+  padding: 1rem;
+  width: 80%;
+  border-radius: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn-collect:hover {
   background-color: #7fa4e0;
 }
 /*# sourceMappingURL=main.css.map */
