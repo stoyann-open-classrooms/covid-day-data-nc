@@ -1,36 +1,22 @@
 header {
   background: $blue;
-  height: 30vh;
+  height: 12.4vh;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position: relative;
 
-  .icone-content {
-    width: auto;
-    justify-content: center;
-    padding: 1rem;
-    display: flex;
-    background-color: rgb(243, 236, 236);
-    border-radius: 2rem;
-    margin-bottom: 2rem;
-    @include bigPhone-and-higher {
-      margin-top: 3rem;
-    }
-
-    img {
-      width: 8rem;
-      @include bigPhone-and-higher {
-        width: 2.5rem;
-      }
-    }
-  }
   h1 {
     text-transform: uppercase;
-    font-size: 2.3rem;
+    font-size: 1.5rem;
+    width: 60%;
+    position: absolute;
+    top: 10%;
+    line-height: 2rem;
+    left: 6.4rem;
     @include bigPhone-and-higher {
-      font-size: 0.8rem;
     }
   }
   img {

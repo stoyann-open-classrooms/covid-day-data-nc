@@ -1,10 +1,12 @@
 @import "./SASS/variables";
 @import "./SASS/reset";
+@import "./SASS/animation";
 @import "./SASS/mixins";
 @import "./SASS/naviguation";
-@import "./SASS/animation";
 @import "./SASS/header";
-@import "./SASS/testimonial";
+@import "./SASS/cards";
+
+@import "./SASS/jauge";
 
 main {
   width: 100%;
@@ -17,202 +19,18 @@ main {
 .active-link {
   background-color: $green;
 }
-.active-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  background-color: whitesmoke;
-  border-radius: 5px;
-  height: 100%;
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  text-align: center;
-  cursor: pointer;
-  transition: opacity 0.4s ease-out;
-  ul {
-    font-size: 1rem;
-    font-weight: bolder;
 
-    li {
-      font-weight: normal;
-      margin-top: 1rem;
-      font-size: 1rem;
-      strong {
-        color: $primary;
-      }
-    }
-  }
-  p {
-    width: 80%;
-  }
-}
-.today-bilan-container {
-  // margin-left: 10%;
-  display: flex;
-  // justify-content: center;
-  // text-align: center;
-  // flex-direction: column;
-  // font-size: 1.5rem;
-  margin-left: 40px;
-
-  background-color: red;
-  // align-items: center;
-
-  .title {
-    position: relative;
-    text-transform: uppercase;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-
-    small {
-      position: absolute;
-      top: 4rem;
-    }
-  }
-}
-.container-cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 75%;
-  margin-left: 60px;
-  margin-top: 2rem;
-  transition: all 0.3s ease-out;
-
-  margin-bottom: 5rem;
-  @include bigPhone-and-higher {
-    flex-direction: column;
-  }
-}
-.today-bilan-cards {
-  color: $dark;
-  margin-top: 5rem;
-  background-color: white;
-  flex-direction: column;
-  margin-right: 1rem;
-  padding: 1rem;
-  border-radius: 5px;
-  position: relative;
-  max-width: 400px;
-
-  width: 100%;
-  i {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    color: $blue;
-    text-align: center;
-  }
-  img {
-    width: 7rem;
-    margin-bottom: 2rem;
-  }
-}
-
-.number {
-  font-size: 2rem;
-  color: $primary;
-  font-weight: bolder;
-}
 .banner-error {
   width: 90%;
 }
-// vaccine-board {
-//   // display: flex;
-//   // flex-direction: column;
-//   // justify-content: space-around;
-//   // align-items: center;
-//   width: 100%;
-//   border: 2px solid $blue;
-//   box-shadow: -5px -2px 15px -1px rgba(255, 255, 255, 0.705);
-//   margin-top: 2rem;
-//   border-radius: 20px;
-
-//   h2 {
-//     color: white;
-//     font-size: 2rem;
-//     text-align: center;
-//     text-transform: uppercase;
-//   }
-//   h3 {
-//     color: white;
-//     text-transform: uppercase;
-//     text-align: center;
-//     span {
-//       font-weight: bolder;
-//     }
-//   }
-// }
-// .vaccine-board {
-//   // display: flex;
-//   // justify-content: space-around;
-
-//   @include bigPhone-and-higher {
-//     flex-direction: column;
-//     margin-left: 25rem;
-//   }
-// }
-// .dose {
-//   color: $blue;
-//   font-size: 1rem;
-//   text-transform: uppercase;
-// }
-// circle {
-//   fill: none;
-//   stroke: url(#GradientColor);
-//   stroke-width: 20px;
-//   stroke-dasharray: 472;
-//   stroke-dashoffset: 472;
-//   animation: anim 2s linear forwards;
-// }
-// svg {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-// }
-
-// .skill {
-//   margin-top: 4rem;
-//   width: 100px;
-//   height: 100px;
-//   margin-bottom: 4rem;
-//   top: -100px;
-
-//   // background: $blue;
-//   position: relative;
-//   .outer {
-//     height: 160px;
-//     width: 160px;
-//     border-radius: 50%;
-//     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-//       -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-//     padding: 20px;
-//     .inner {
-//       height: 120px;
-//       width: 120px;
-//       border-radius: 50%;
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-//       justify-content: center;
-//       box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-//         inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-//         -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-//         0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
-//         0px 12px 10px -10px rgba(0, 0, 0, 0.5);
-//     }
-//   }
-// }
-
-// #number {
-//   font-weight: 600;
-//   font-size: 2rem;
-//   color: $blue;
-// }
-
+.title-index {
+  color: $green;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2rem;
+  width: 100%;
+}
 .container-error {
   display: flex;
   flex-direction: column;
@@ -244,53 +62,25 @@ footer {
   justify-content: center;
   p {
     font-size: 1rem;
+    margin-left: 60px;
   }
 }
 
-// .text {
-//   width: 100%;
-//   display: flex;
-//   max-width: 700px;
-//   line-height: 2.5rem;
-//   margin: auto;
-//   padding: 5rem;
-
-//   p {
-//     transform: translateX(5%);
-//     text-align: center;
-//     border: 3px solid $blue;
-//     padding: 50px;
-//     font-size: 1rem;
-//     border-radius: 20px;
-//     display: block;
-//     position: relative;
-//   }
-// }
-
-// .title {
-//   text-align: center;
-//   @include bigPhone-and-higher {
-//     font-size: 0.6rem;
-//   }
-// }
-
-// .container-vacc {
-//   width: 100%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
 .page-content {
   position: relative;
-  width: 100%;
-  margin-left: 60px;
+  width: 80%;
+  margin-left: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  // min-height: 100vh;
   margin-top: 5rem;
-
+  h2 {
+    font-size: 1.1rem;
+    text-align: center;
+    width: 80%;
+    color: $green;
+  }
   .article {
     background-color: rgb(216, 216, 216);
     height: 400px;
@@ -305,7 +95,7 @@ footer {
       background-color: grey;
       height: auto;
       width: 100%;
-      height: 60%;
+      height: 30%;
       .ar-img {
         width: 100%;
         height: 100%;
@@ -314,7 +104,7 @@ footer {
       }
     }
     .article-sort {
-      font-size: 1.64rem;
+      font-size: 1rem;
       color: $blue;
 
       i {
@@ -324,10 +114,10 @@ footer {
 
     .article-body {
       padding: 2rem;
-      font-size: 1.15rem;
+      font-size: 1rem;
       line-height: 2.5rem;
       strong {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
       }
       h3 {
         margin-bottom: 1rem;
@@ -444,135 +234,6 @@ footer {
       font-size: 1rem;
     }
   }
-}
-.dose-nb {
-  display: flex;
-  align-items: center;
-  font-size: 3rem;
-  justify-content: center;
-  margin-bottom: 3rem;
-  margin-left: 30px;
-
-  font-weight: bolder;
-  padding: 1.2rem;
-  border-radius: 2rem;
-  @include bigPhone-and-higher {
-    font-size: 1.5rem;
-  }
-  img {
-    margin-left: 2rem;
-    width: 100px;
-  }
-}
-:root {
-  /* dimension de notre jauge */
-  --size: 200px;
-  /* nombre pi */
-  --pi: 3.14159265358979;
-  /* rayon du cercle dans le svg */
-  --circle-r: 30%;
-  /* pourcentage de remplissage de la jauge SANS UNITÉ */
-  --nb-percent1: 0;
-  --nb-percent-str1: "0%";
-  --nb-percent2: 0;
-  --nb-percent-str2: "0%";
-  /* calcul de la longueur max de la jauge */
-  --dasharray-max: calc(2 * var(--pi) * var(--circle-r));
-  /* calcul du remplissage de la jauge */
-  --dasharray-size: calc(var(--dasharray-max) * var(--nb-percent1) / 100);
-}
-
-.pie {
-  border-radius: 50%;
-  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
-  display: block;
-  height: var(--size);
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  width: var(--size);
-  margin-bottom: 4rem;
-}
-
-.pie:after {
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.1), 0 0 20px rgba(0, 0, 0, 0.3),
-    0 0 8px rgba(0, 0, 0, 1) inset, 0 0 8px rgba(0, 0, 0, 0.5) inset;
-  content: "";
-  height: 100%;
-  left: -1px;
-  position: absolute;
-  top: -1px;
-  width: 100%;
-}
-
-svg {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  transform: rotate(-90deg);
-  width: 100%;
-}
-
-circle {
-  transition: all 0.2s linear;
-  /* la taille du stroke est trop petite... */
-  /* on passe en pourcentage pour que la taille devienne "responsive" */
-  stroke: $blue;
-  stroke-width: 39.7%;
-  stroke-dasharray: var(--dasharray-size), var(--dasharray-max);
-}
-
-.nb {
-  /* on va rendre les dimensions automatiques */
-  background: linear-gradient(180deg, #fff 0%, #999 100%);
-  /* pour l'alignement horiz et vertic */
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9),
-    0 0 15px rgba(255, 255, 255, 0.8) inset;
-  color: #111;
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: calc(var(--size) * 0.2);
-  font-weight: bold;
-  height: var(--nb-size);
-  left: var(--alignment);
-  line-height: calc(var(--size) / 1.5);
-  position: absolute;
-  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
-  top: var(--alignment);
-  width: var(--nb-size);
-  --nb-size: calc(var(--circle-r) * 2.3);
-  --alignment: calc(50% - var(--nb-size) / 2);
-}
-
-.nb2 {
-  /* on va rendre les dimensions automatiques */
-  background: linear-gradient(180deg, #fff 0%, #999 100%);
-  /* pour l'alignement horiz et vertic */
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9),
-    0 0 15px rgba(255, 255, 255, 0.8) inset;
-  color: #111;
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: calc(var(--size) * 0.2);
-  font-weight: bold;
-  height: var(--nb-size);
-  left: var(--alignment);
-  line-height: calc(var(--size) / 1.5);
-  position: absolute;
-  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
-  top: var(--alignment);
-  width: var(--nb-size);
-  --nb-size: calc(var(--circle-r) * 2.3);
-  --alignment: calc(50% - var(--nb-size) / 2);
-}
-.nb2::after {
-  content: var(--nb-percent-str2);
-}
-.nb:after {
-  content: var(--nb-percent-str1);
 }
 
 .btn-link {

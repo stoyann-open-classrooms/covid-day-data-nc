@@ -1,0 +1,285 @@
+.dose-nb {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-left: 30px;
+
+  font-weight: bolder;
+  padding: 1.2rem;
+  border-radius: 2rem;
+  @include bigPhone-and-higher {
+    font-size: 1.5rem;
+  }
+  img {
+    margin-left: 2rem;
+    width: 100px;
+  }
+}
+
+.jauge-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* VARIABLES */
+:root {
+  /* dimension de notre jauge */
+  --size: 200px;
+
+  /* nombre pi */
+  --pi: 3.14159265358979;
+  /* rayon du cercle dans le svg */
+  --circle-r: 30%;
+  /* pourcentage de remplissage de la jauge SANS UNITÉ */
+  --nb-percent: 0;
+  --nb-percent-str: "0%";
+  --nb-percent2: 0;
+  --nb-percent-str2: "0%";
+  --nb-percent3: 0;
+  --nb-percent-str3: "0%";
+  --nb-percent4: 0;
+  --nb-percent-str4: "0%";
+  --nb-percent5: 0;
+  --nb-percent-str5: "0%";
+
+  /* calcul de la longueur max de la jauge */
+  --dasharray-max: calc(2 * var(--pi) * var(--circle-r));
+  /* calcul du remplissage de la jauge */
+  --dasharray-size: calc(var(--dasharray-max) * var(--nb-percent) / 100);
+  --dasharray-size2: calc(var(--dasharray-max) * var(--nb-percent2) / 100);
+  --dasharray-size3: calc(var(--dasharray-max) * var(--nb-percent3) / 100);
+  --dasharray-size4: calc(var(--dasharray-max) * var(--nb-percent4) / 100);
+  --dasharray-size5: calc(var(--dasharray-max) * var(--nb-percent5) / 100);
+}
+
+.pie {
+  border-radius: 50%;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  display: block;
+  height: var(--size);
+  margin: 2rem auto;
+  position: relative;
+  text-align: center;
+  width: var(--size);
+}
+
+.pie:after {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.1), 0 0 20px rgba(0, 0, 0, 0.3),
+    0 0 8px rgba(0, 0, 0, 1) inset, 0 0 8px rgba(0, 0, 0, 0.5) inset;
+  content: "";
+  height: 100%;
+  left: -1px;
+  position: absolute;
+  top: -1px;
+  width: 100%;
+}
+
+svg {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(-90deg);
+  width: 100%;
+}
+
+circle {
+  transition: all 0.2s linear;
+  /* la taille du stroke est trop petite... */
+  /* on passe en pourcentage pour que la taille devienne "responsive" */
+  stroke: $blue;
+  stroke-width: 39.7%;
+  stroke-dasharray: var(--dasharray-size), var(--dasharray-max);
+  transition: all 2s ease-in-out;
+}
+.circle2 {
+  transition: all 0.2s linear;
+  /* la taille du stroke est trop petite... */
+  /* on passe en pourcentage pour que la taille devienne "responsive" */
+  stroke: $blue;
+  stroke-width: 39.7%;
+  stroke-dasharray: var(--dasharray-size2), var(--dasharray-max);
+  transition: all 2s ease-in-out;
+}
+.circle3 {
+  transition: all 0.2s linear;
+  /* la taille du stroke est trop petite... */
+  /* on passe en pourcentage pour que la taille devienne "responsive" */
+  stroke: $blue;
+  stroke-width: 39.7%;
+  stroke-dasharray: var(--dasharray-size3), var(--dasharray-max);
+  transition: all 2s ease-in-out;
+}
+.circle4 {
+  transition: all 0.2s linear;
+  /* la taille du stroke est trop petite... */
+  /* on passe en pourcentage pour que la taille devienne "responsive" */
+  stroke: $blue;
+  stroke-width: 39.7%;
+  stroke-dasharray: var(--dasharray-size4), var(--dasharray-max);
+  transition: all 2s ease-in-out;
+}
+.circle5 {
+  transition: all 0.2s linear;
+  /* la taille du stroke est trop petite... */
+  /* on passe en pourcentage pour que la taille devienne "responsive" */
+  stroke: $blue;
+  stroke-width: 39.7%;
+  stroke-dasharray: var(--dasharray-size4), var(--dasharray-max);
+  transition: all 2s ease-in-out;
+}
+.nb {
+  /* on va rendre les dimensions automatiques */
+  background: linear-gradient(180deg, #fff 0%, #999 100%);
+  /* pour l'alignement horiz et vertic */
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9),
+    0 0 15px rgba(255, 255, 255, 0.8) inset;
+  color: #111;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) * 0.2);
+  font-weight: bold;
+  height: var(--nb-size);
+  left: var(--alignment);
+  line-height: calc(var(--size) / 1.5);
+  position: absolute;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
+  top: var(--alignment);
+  width: var(--nb-size);
+  --nb-size: calc(var(--circle-r) * 2.3);
+  --alignment: calc(50% - var(--nb-size) / 2);
+}
+
+.nb:after {
+  content: var(--nb-percent-str);
+}
+
+.nb2 {
+  /* on va rendre les dimensions automatiques */
+  background: linear-gradient(180deg, #fff 0%, #999 100%);
+  /* pour l'alignement horiz et vertic */
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9),
+    0 0 15px rgba(255, 255, 255, 0.8) inset;
+  color: #111;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) * 0.2);
+  font-weight: bold;
+  height: var(--nb-size);
+  left: var(--alignment);
+  line-height: calc(var(--size) / 1.5);
+  position: absolute;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
+  top: var(--alignment);
+  width: var(--nb-size);
+  --nb-size: calc(var(--circle-r) * 2.3);
+  --alignment: calc(50% - var(--nb-size) / 2);
+  &:after {
+    content: var(--nb-percent-str2);
+  }
+}
+
+.nb3 {
+  /* on va rendre les dimensions automatiques */
+  background: linear-gradient(180deg, #fff 0%, #999 100%);
+  /* pour l'alignement horiz et vertic */
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9),
+    0 0 15px rgba(255, 255, 255, 0.8) inset;
+  color: #111;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) * 0.2);
+  font-weight: bold;
+  height: var(--nb-size);
+  left: var(--alignment);
+  line-height: calc(var(--size) / 1.5);
+  position: absolute;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
+  top: var(--alignment);
+  width: var(--nb-size);
+  --nb-size: calc(var(--circle-r) * 2.3);
+  --alignment: calc(50% - var(--nb-size) / 2);
+  &::after {
+    content: var(--nb-percent-str3);
+  }
+}
+
+.nb4 {
+  /* on va rendre les dimensions automatiques */
+  background: linear-gradient(180deg, #fff 0%, #999 100%);
+  /* pour l'alignement horiz et vertic */
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9),
+    0 0 15px rgba(255, 255, 255, 0.8) inset;
+  color: #111;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) * 0.2);
+  font-weight: bold;
+  height: var(--nb-size);
+  left: var(--alignment);
+  line-height: calc(var(--size) / 1.5);
+  position: absolute;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
+  top: var(--alignment);
+  width: var(--nb-size);
+  --nb-size: calc(var(--circle-r) * 2.3);
+  --alignment: calc(50% - var(--nb-size) / 2);
+  &::after {
+    content: var(--nb-percent-str4);
+  }
+}
+.infov {
+  position: absolute;
+  bottom: 20%;
+  left: 22%;
+  font-size: 1.5rem;
+  color: $dark;
+  font-weight: bold;
+}
+
+.infoc {
+  position: absolute;
+  bottom: 25%;
+  left: 36%;
+  font-size: 1.4rem;
+  color: $dark;
+  font-weight: bold;
+}
+
+.infoa {
+  position: absolute;
+  bottom: 30%;
+  left: 30%;
+  font-size: 1.5rem;
+  color: $dark;
+  font-weight: bold;
+}
+.nb5 {
+  /* on va rendre les dimensions automatiques */
+  background: linear-gradient(180deg, #fff 0%, #999 100%);
+  /* pour l'alignement horiz et vertic */
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9),
+    0 0 15px rgba(255, 255, 255, 0.8) inset;
+  color: #111;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) * 0.2);
+  font-weight: bold;
+  height: var(--nb-size);
+  left: var(--alignment);
+  line-height: calc(var(--size) / 1.5);
+  position: absolute;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
+  top: var(--alignment);
+  width: var(--nb-size);
+  --nb-size: calc(var(--circle-r) * 2.3);
+  --alignment: calc(50% - var(--nb-size) / 2);
+  &::after {
+    content: var(--nb-percent-str5);
+  }
+}

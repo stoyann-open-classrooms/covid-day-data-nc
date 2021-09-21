@@ -74,21 +74,8 @@
 
 
     <header>
-        <div class="icone-content">
-
-            <img src="./src/icones/GEL.png" alt="">
-            <img src="./src/icones/DISTANCE.png" alt="">
-            <img src="./src/icones/hands.png" alt="">
-            <img src="./src/icones/masque.png" alt="">
-            <img src="./src/icones/stayhome.png" alt="">
-            <img src="./src/icones/VEGETABLES.png" alt="">
-
-        </div>
         <h1>Infos Coronavirus Nouvelle-calédonie</h1>
-        <h1> MAJ Point presse du 21.09.2021 -14H </h1>
-
         <div class="toggle"></div>
-
     </header>
 
 
@@ -96,16 +83,12 @@
 
     <main>
 
-
         <div class="container-cards">
 
-            <h2> Les entreprises se sont organisées avec le « Click and collect »</h2>
-
-            <a class="btn-collect"
-                href="https://gouv.nc/niveau-alerte-commerces-et-etablissements/clickandcollect?fbclid=IwAR3ChswY4dIKaVymTBUNuRBRPkkiOoryILZZr8xOruOsU1w-BXerWfoKcyU">
-                Qui fait du « Click and collect » ? </a>
 
 
+            <h2 class="title-index">Point presse <br><span> du 21.09.2021-14H</span>
+            </h2>
             <div class="today-bilan-cards">
                 <div class=" card new-cases">
                     <img src="./src/icones/virus.png" alt="">
@@ -183,7 +166,7 @@
 
             <div class="today-bilan-cards">
                 <div class=" card new-cases">
-                    <img src="./src/icones/seringue.png" alt="">
+                    <img src="./src/icones/dose3.png" alt="">
 
                     <h3>Vaccination</h3>
                     <p class="number">2391</p>
@@ -191,9 +174,12 @@
                         Doses injectées dans les <br> dernières 24h</small>
                 </div>
                 <div class="active-cards">
-                    <p>Il faut attendre 15 jours après la 1ere dose pour avoir au moins 50% d’immunité <br>
-                        <strong>Récul de la Vaccination</strong>
-                    </p>
+                    <ul class="list-hotel">Places disponibles :
+                        <li>Première dose: <strong>2298</strong> </li>
+                        <li>Seconde dose: <strong>595</strong></li>
+                        <li>Troisième dose : <strong>38</strong> </li>
+                    </ul>
+
 
                 </div>
             </div>
@@ -207,7 +193,7 @@
                         personnes environ en hôtel</small>
                 </div>
                 <div class="active-cards">
-                    <ul>Places disponibles :
+                    <ul class="list-hotel">Places disponibles :
                         <li>Province Sud : <strong>94</strong> </li>
                         <li>Province des îles : <strong>108</strong></li>
                         <li>Province Nord : <strong>87</strong> </li>
@@ -222,36 +208,14 @@
 
 
 
-        <!-- 
-            <div class="skill">
-                <div class="outer">
-                    <div class="inner">
-                        <div id="numberBis">
-                            34.34%
-                        </div>
-                        <div class="dose">2eme Dose</div>
-                    </div>
-                </div>
-
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                    <defs>
-                        <lineargradient id="GradientColor">
-                            <stop offset="-25%" stop-color="#68d9a4" />
-                            <stop offset="100%" stop-color="#7fa4e0" />
-                        </lineargradient>
-                    </defs>
-                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-                </svg>
-
-
-            </div> -->
-
-
 
     </main>
     <div class="jauge-container">
-        <h2>Avancement de la vaccination sur l'ensemble de la population vaccinable</h2>
+        <h2 class="title-h2">Avancement de la vaccination <br>
+            <span>sur l'ensemble de la population vaccinable</span>
+        </h2>
         <div class="dose-nb">Une dose <img src="./src/icones/dose1.png" alt=""> </div>
+
         <div class="pie">
             <svg>
                 <circle fill="red" r="30%" cx="50%" cy="50%" />
@@ -259,17 +223,50 @@
             <div class="nb"></div>
         </div>
 
-        <div class="dose-nb">Deux doses <img src="./src/icones/dose2.png" alt=""></div>
-
+        <div class="dose-nb">Deux doses <img src="./src/icones/dose2.png" alt=""> </div>
         <div class="pie">
             <svg>
-                <circle fill="red" r="30%" cx="50%" cy="50%" />
+                <circle class="circle2" fill="red" r="30%" cx="50%" cy="50%" />
             </svg>
             <div class="nb2"></div>
         </div>
 
 
+        <h2 class="title-index">Statut vaccinal des <br> cas positifs</h2>
+
+        <div class="pie">
+            <svg>
+                <circle class="circle3" fill="red" r="30%" cx="50%" cy="50%" />
+            </svg>
+            <div class="nb3"></div>
+            <div class="infoa">Non vacciné </div>
+        </div>
+
+        <div class="pie">
+            <svg>
+                <circle class="circle4" fill="red" r="30%" cx="50%" cy="50%" />
+            </svg>
+            <div class="nb4"></div>
+            <div class="infov">Shéma vaccinal <br> complet</div>
+        </div>
+
+
+        <div class="pie">
+            <svg>
+                <circle class="circle5" fill="red" r="30%" cx="50%" cy="50%" />
+            </svg>
+            <div class="nb5"></div>
+            <div class="infoc">une dose <br> </div>
+
+
+        </div>
+
+
     </div>
+
+
+
+
 
     <footer>
         <p>Les données inscrites proviennent du <br><a href="https://gouv.nc/">Gouvernement de La Nouvelle-Calédonie</a>
