@@ -573,3 +573,17 @@ circle {
 .nb:after {
   content: var(--nb-percent-str1);
 }
+
+.btn-link {
+  display: block;
+  border: 2px $blue solid;
+  padding: 1rem;
+  width: 300px;
+  border-radius: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+
+  &:hover {
+    background-color: $blue;
+  }
+}

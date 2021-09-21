@@ -877,4 +877,18 @@ circle {
 .nb:after {
   content: var(--nb-percent-str1);
 }
+
+.btn-link {
+  display: block;
+  border: 2px #7fa4e0 solid;
+  padding: 1rem;
+  width: 300px;
+  border-radius: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.btn-link:hover {
+  background-color: #7fa4e0;
+}
 /*# sourceMappingURL=main.css.map */
