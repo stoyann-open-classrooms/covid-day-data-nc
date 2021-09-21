@@ -882,7 +882,7 @@ circle {
   display: block;
   border: 2px #7fa4e0 solid;
   padding: 1rem;
-  width: 300px;
+  width: 100%;
   border-radius: 2rem;
   margin: 2rem 0;
   text-align: center;
