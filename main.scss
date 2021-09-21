@@ -432,8 +432,19 @@ footer {
   }
 }
 .dose-nb {
+  display: flex;
+  align-items: center;
   font-size: 3rem;
-  margin-bottom: 1.5rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+  font-weight: bolder;
+  padding: 1.2rem;
+  border-radius: 2rem;
+  img {
+    margin-left: 2rem;
+    width: 100px;
+  }
 }
 :root {
   /* dimension de notre jauge */
