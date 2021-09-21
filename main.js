@@ -8,15 +8,15 @@ burger.addEventListener("click", () => {
 });
 
 var root = document.documentElement;
-var percent = 55.16;
-var percent2 = 34.62;
 setTimeout(function () {
+  var percent = 55;
   var DOMStyle = getComputedStyle(root);
   root.style.setProperty("--nb-percent1", percent);
   root.style.setProperty("--nb-percent-str1", '"' + percent + '%"');
 }, 1000);
 
 setTimeout(function () {
+  var percent2 = 34;
   var DOMStyle = getComputedStyle(root);
   root.style.setProperty("--nb-percent2", percent2);
   root.style.setProperty("--nb-percent-str2", '"' + percent2 + '%"');
