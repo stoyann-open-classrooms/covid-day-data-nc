@@ -8,8 +8,8 @@ burger.addEventListener("click", () => {
 });
 
 var root = document.documentElement;
-var percent = 55.02;
-var percent2 = 34.34;
+var percent = 55.16;
+var percent2 = 34.62;
 setTimeout(function () {
   var DOMStyle = getComputedStyle(root);
   root.style.setProperty("--nb-percent1", percent);
