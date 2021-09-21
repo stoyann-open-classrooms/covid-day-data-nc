@@ -167,7 +167,7 @@ li {
 
 header {
   background: #7fa4e0;
-  height: 20vh;
+  height: 30vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,10 +708,20 @@ footer p {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 5rem;
+  width: 90%;
+  margin-left: 30px;
 }
 
 .jauge-container h2 {
+  margin-left: 2rem;
+  text-align: center;
   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 29rem) {
+  .jauge-container h2 {
+    font-size: 1rem;
+  }
 }
 
 .dose-nb {
@@ -726,9 +736,16 @@ footer p {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 3rem;
+  margin-left: 30px;
   font-weight: bolder;
   padding: 1.2rem;
   border-radius: 2rem;
+}
+
+@media screen and (max-width: 29rem) {
+  .dose-nb {
+    font-size: 1.5rem;
+  }
 }
 
 .dose-nb img {
