@@ -286,7 +286,6 @@ footer {
   width: 100%;
   margin-left: 60px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
@@ -603,4 +602,23 @@ circle {
   &:hover {
     background-color: $blue;
   }
+}
+
+.list-ul {
+  font-size: 1.45rem;
+  width: 80%;
+  li {
+    margin: 1rem 0;
+  }
+  i {
+    color: $green;
+    margin-right: 1rem;
+    line-height: 2rem;
+  }
+}
+
+.title-h2 {
+  font-size: 1.45rem;
+  text-align: center;
+  color: $green;
 }
