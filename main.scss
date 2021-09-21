@@ -28,18 +28,18 @@ main {
   height: 100%;
   bottom: 0;
   right: 0;
-  width: 60%;
+  width: 50%;
   text-align: center;
   cursor: pointer;
   transition: opacity 0.4s ease-out;
   ul {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bolder;
 
     li {
       font-weight: normal;
       margin-top: 1rem;
-      font-size: 1.2rem;
+      font-size: 1rem;
       strong {
         color: $primary;
       }
@@ -81,7 +81,7 @@ main {
   width: 75%;
   margin-left: 60px;
 
-  margin-bottom: 150px;
+  margin-bottom: 5rem;
   @include bigPhone-and-higher {
     flex-direction: column;
   }
