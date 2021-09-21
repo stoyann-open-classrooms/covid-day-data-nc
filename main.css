@@ -710,6 +710,15 @@ footer p {
   margin-bottom: 5rem;
 }
 
+.jauge-container h2 {
+  margin-bottom: 3rem;
+}
+
+.dose-nb {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
 :root {
   /* dimension de notre jauge */
   --size: 200px;
@@ -738,6 +747,7 @@ footer p {
   position: relative;
   text-align: center;
   width: var(--size);
+  margin-bottom: 4rem;
 }
 
 .pie:after {
@@ -768,7 +778,7 @@ circle {
   transition: all 0.2s linear;
   /* la taille du stroke est trop petite... */
   /* on passe en pourcentage pour que la taille devienne "responsive" */
-  stroke: #67a505;
+  stroke: #7fa4e0;
   stroke-width: 39.7%;
   stroke-dasharray: var(--dasharray-size), var(--dasharray-max);
 }
