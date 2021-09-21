@@ -28,6 +28,23 @@
         "second": 7,
         "third": 7
       }
+    },
+    {
+      "id": 2,
+      "date": "21.09.2021",
+      "cas": 793,
+      "casTotal": 4386,
+      "guerisonTotal": 39,
+      "deces": 25,
+      "reanimation": 54,
+      "hospitalise": 329,
+      "totalDoseInject": 2391,
+      "hotel": 149,
+      "doseInject": {
+        "first": 138,
+        "second": 7,
+        "third": 7
+      }
     }
   ]
 }
