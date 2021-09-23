@@ -903,6 +903,7 @@ footer p {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 5rem;
+  margin-top: 10rem;
   width: 90%;
   margin-left: 30px;
 }
@@ -967,5 +968,17 @@ footer p {
   font-size: 1.45rem;
   text-align: center;
   color: #68d9a4;
+}
+
+.graph-new-cas-container {
+  background-color: #1d1d1d;
+  width: 80%;
+  margin-left: 60px;
+  color: #fff;
+}
+
+.graph-new-cas-container h2 {
+  margin-bottom: 2rem;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=main.css.map */

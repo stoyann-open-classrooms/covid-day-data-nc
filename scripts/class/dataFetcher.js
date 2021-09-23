@@ -1,5 +1,5 @@
-import { dailyData } from "./DailyData.js";
-import { dailyDataList } from "./DailyDataList.js";
+import { DailyData } from "./DailyData.js";
+import { DailyDataList } from "./DailyDataList.js";
 export class DataFetcher {
   constructor(data) {
     this.data = data;
@@ -10,18 +10,22 @@ export class DataFetcher {
 
     for (let dayli of this.data) {
       dataList.push(
-        new dailyData(
-          dailyData.id,
-          dailyData.date,
-          dailyData.cas,
-          dailyData.guerison,
-          dailyData.deces,
-          dailyData.hospitalise,
-          dailyData.doseInject
+        new DailyData(
+          dayli.id,
+          dayli.date,
+          dayli.cas,
+          dayli.hospitalise,
+          dayli.reanimation,
+          dayli.deces,
+          dayli.guerison,
+          dayli.hotel,
+          dayli.statuVAccinalCasPositifs,
+          dayli.dosesInjecteesDuJour,
+          dayli.AvanceVaccinationPopVacinables
         )
       );
     }
 
-    return new dailyDataList(dataList);
+    return new DailyDataList(dataList);
   }
 }

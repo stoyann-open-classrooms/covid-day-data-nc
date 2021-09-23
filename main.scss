@@ -224,6 +224,7 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-bottom: 5rem;
+  margin-top: 10rem;
   width: 90%;
   margin-left: 30px;
   h2 {
@@ -282,4 +283,15 @@ footer {
   font-size: 1.45rem;
   text-align: center;
   color: $green;
+}
+
+.graph-new-cas-container {
+  background-color: $dark;
+  width: 80%;
+  margin-left: 60px;
+  color: #fff;
+  h2 {
+    margin-bottom: 2rem;
+    margin-left: 10px;
+  }
 }

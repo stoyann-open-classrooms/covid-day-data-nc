@@ -56,7 +56,7 @@
                 </a>
             </li>
             <li>
-                <a href="./pages/error.html">
+                <a href="./pages/statistiques.html">
                     <span class="icone"><i class="fas fa-chart-pie"></i></span>
                     <span class="title">Statistiques</span>
                 </a>
@@ -93,12 +93,12 @@
                 <div class=" card new-cases">
                     <img src="./src/icones/virus.png" alt="">
                     <h3>Nouveaux cas</h3>
-                    <p class="number">555</p>
+                    <p class="number" id="today-cas"></p>
                     <small>dans les dernières 24h</small>
                 </div>
                 <div class="active-cards">
                     <h3>cas confirmés</h3>
-                    <p class="number">5282</p>
+                    <p class="number" id="total-cas"></p>
                     <small>depuis le 06/09/2021</small>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                     <img src="./src/icones/bed.png" alt="">
 
                     <h3>Réanimation</h3>
-                    <p class="number">54</p>
+                    <p class="number" id="reanimation"></p>
                     <small>Service en saturation </small>
                 </div>
                 <div class="active-cards">
@@ -122,12 +122,12 @@
                 <div class=" card new-cases">
                     <img src="./src/icones/death.png" alt="">
                     <h3>Décès</h3>
-                    <p class="number">8</p>
+                    <p class="number" id="today-deces"></p>
                     <small>dans les dernières 24h</small>
                 </div>
                 <div class="active-cards">
                     <h3>décès</h3>
-                    <p class="number">57</p>
+                    <p class="number" id="total-deces"></p>
                     <small>depuis le 09/09/2021 le plus jeune avait 41 ans</small>
                 </div>
             </div>
@@ -136,7 +136,7 @@
                     <img src="./src/icones/ambulance.png" alt="">
 
                     <h3>Hospitalisations</h3>
-                    <p class="number">377</p>
+                    <p class="number" id="hospitalisation"></p>
                     <small>Personnes en unité COVID </small>
                 </div>
                 <div class="active-cards">
@@ -151,7 +151,7 @@
                 <div class=" card new-cases">
                     <img src="./src/icones/cure.png" alt="">
                     <h3> Guérison</h3>
-                    <p class="number">190</p>
+                    <p class="number" id="guerison"></p>
                     <small></small>
                 </div>
                 <div class="active-cards">
@@ -169,15 +169,15 @@
                     <img src="./src/icones/dose3.png" alt="">
 
                     <h3>Vaccination</h3>
-                    <p class="number">2716</p>
+                    <p class="number" id="total-dose-inject"></p>
                     <small>
                         Doses injectées <br></small>
                 </div>
                 <div class="active-cards">
                     <ul class="list-hotel">
-                        <li>Première dose: <strong>-</strong> </li>
-                        <li>Seconde dose: <strong>-</strong></li>
-                        <li>Troisième dose : <strong>-</strong> </li>
+                        <li>Première dose: <strong id="first-dose"></strong> </li>
+                        <li>Seconde dose: <strong id="second-dose"></strong></li>
+                        <li>Troisième dose : <strong id="third-dose"></strong> </li>
                     </ul>
 
 
@@ -188,7 +188,7 @@
                     <i class="fas fa-hotel"></i>
 
                     <h3>Occupation des <br> hôtels</h3>
-                    <p class="number">190</p>
+                    <p class="number" id="hotel"></p>
                     <small>
                         personnes environ en hôtel</small>
                 </div>
@@ -210,6 +210,7 @@
 
 
     </main>
+
     <div class="jauge-container">
         <h2 class="title-h2">Avancement de la vaccination - Au 21.09.2021<br>
             <span>sur l'ensemble de la population vaccinable</span>
