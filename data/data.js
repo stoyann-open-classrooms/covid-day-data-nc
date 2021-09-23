@@ -14,7 +14,7 @@ export const DAILYDATA = [
       uneDose: "",
     },
     dosesInjecteesDuJour: {
-      first: "2256",
+      first: 2256,
       second: "",
       third: "",
     },

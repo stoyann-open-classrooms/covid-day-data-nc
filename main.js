@@ -41,6 +41,15 @@ function displayTodayData() {
   totalDoseContainer.innerText = dataToday.getTotalInjectDay();
 }
 
+const dataSetCas = dataList.getDatasetCas();
+const dataSetDeces = dataList.getDatasetDeces();
+const dataSetHospitalisation = dataList.getDatasetHospitalisation();
+const dataSetTotalDoseInjectDay = dataList.getDatasetTotalDoseInject();
+// console.log(dataSetCas);
+// console.log(dataSetDeces);
+// console.log(dataSetHospitalisation);
+// console.log(dataSetTotalDoseInjectDay);
+
 // ===========================================================================================
 let burger = document.querySelector(".toggle");
 
@@ -49,8 +58,8 @@ burger.addEventListener("click", () => {
   naviguation.classList.toggle("active");
 });
 
-var root = document.documentElement;
-var percent = 22;
+let root = document.documentElement;
+
 timeVac(dataToday.statuVAccinalCasPositifs.nonVaccine);
 timeVac2(dataToday.statuVAccinalCasPositifs.complet);
 timeVac3(dataToday.statuVAccinalCasPositifs.uneDose);
@@ -58,14 +67,14 @@ time2(dataToday.AvanceVaccinationPopVacinables.second);
 time(dataToday.AvanceVaccinationPopVacinables.first);
 function time(percentValue) {
   setTimeout(function () {
-    var DOMStyle = getComputedStyle(root);
+    let DOMStyle = getComputedStyle(root);
     root.style.setProperty("--nb-percent", percentValue);
     root.style.setProperty("--nb-percent-str", '"' + percentValue + '%"');
   }, 1000);
 }
 function time2(percentValue) {
   setTimeout(function () {
-    var DOMStyle = getComputedStyle(root);
+    let DOMStyle = getComputedStyle(root);
     root.style.setProperty("--nb-percent2", percentValue);
     root.style.setProperty("--nb-percent-str2", '"' + percentValue + '%"');
   }, 1000);
@@ -73,7 +82,7 @@ function time2(percentValue) {
 
 function timeVac(percentValue) {
   setTimeout(function () {
-    var DOMStyle = getComputedStyle(root);
+    let DOMStyle = getComputedStyle(root);
     root.style.setProperty("--nb-percent3", percentValue);
     root.style.setProperty("--nb-percent-str3", '"' + percentValue + '%"');
   }, 1000);
@@ -81,7 +90,7 @@ function timeVac(percentValue) {
 
 function timeVac2(percentValue) {
   setTimeout(function () {
-    var DOMStyle = getComputedStyle(root);
+    let DOMStyle = getComputedStyle(root);
     root.style.setProperty("--nb-percent4", percentValue);
     root.style.setProperty("--nb-percent-str4", '"' + percentValue + '%"');
   }, 1000);
@@ -89,7 +98,7 @@ function timeVac2(percentValue) {
 
 function timeVac3(percentValue) {
   setTimeout(function () {
-    var DOMStyle = getComputedStyle(root);
+    let DOMStyle = getComputedStyle(root);
     root.style.setProperty("--nb-percent4", percentValue);
     root.style.setProperty("--nb-percent-str5", '"' + percentValue + '%"');
   }, 1000);
