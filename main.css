@@ -970,15 +970,60 @@ footer p {
   color: #68d9a4;
 }
 
-.graph-new-cas-container {
-  background-color: #1d1d1d;
+.container-graph {
+  margin-left: 3.2rem;
   width: 80%;
+  padding: 2rem;
   margin-left: 60px;
   color: #fff;
 }
 
-.graph-new-cas-container h2 {
+.container-graph h2 {
   margin-bottom: 2rem;
   margin-left: 10px;
+}
+
+.container-graph canvas {
+  margin: 2rem 0;
+}
+
+.container-graph2 {
+  z-index: 9999;
+  top: 0;
+  margin-left: 3.2rem;
+  width: 80%;
+  padding: 2rem;
+  margin-left: 60px;
+  color: #fff;
+  position: relative;
+}
+
+.content-square {
+  position: absolute;
+  bottom: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.square {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.square1 {
+  background-color: #ff3939;
+}
+
+.square2 {
+  background-color: #fd772a;
+}
+
+.square3 {
+  background-color: #68d9a4;
 }
 /*# sourceMappingURL=main.css.map */

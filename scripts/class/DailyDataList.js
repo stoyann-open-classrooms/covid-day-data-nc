@@ -37,12 +37,28 @@ export class DailyDataList {
     return dataSetDeces;
   }
 
+  getDatasetDate() {
+    const dataSetDate = [];
+    this.dataList.forEach((el) => {
+      dataSetDate.push(el.date);
+    });
+    return dataSetDate;
+  }
+
   getDatasetHospitalisation() {
     const dataSetHospitalisation = [];
     this.dataList.forEach((el) => {
       dataSetHospitalisation.push(el.hospitalise);
     });
     return dataSetHospitalisation;
+  }
+
+  getDatasetReanimation() {
+    const dataSetReanimation = [];
+    this.dataList.forEach((el) => {
+      dataSetReanimation.push(el.reanimation);
+    });
+    return dataSetReanimation;
   }
 
   getDatasetTotalDoseInject() {

@@ -11,6 +11,8 @@
     <title>Infos COVID NC</title>
     <link rel="stylesheet" href="./main.css">
     <script src="https://kit.fontawesome.com/6edb39c88a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body>
@@ -87,7 +89,7 @@
 
 
 
-            <h2 class="title-index">Point presse <br><span> du 23.09.2021-14H</span>
+            <h2 class="title-index">Point sannitaire et vaccinal <br><span> du 24.09.2021-10H</span>
             </h2>
             <div class="today-bilan-cards">
                 <div class=" card new-cases">
@@ -100,7 +102,9 @@
                     <h3>cas confirmés</h3>
                     <p class="number" id="total-cas"></p>
                     <small>depuis le 06/09/2021</small>
+
                 </div>
+
             </div>
             <div class="today-bilan-cards">
                 <div class=" card new-cases">
@@ -202,7 +206,6 @@
                 </div> -->
             </div>
 
-        </div>
 
 
 
@@ -212,6 +215,7 @@
     </main>
 
     <div class="jauge-container">
+
         <h2 class="title-h2">Avancement de la vaccination - Au 21.09.2021<br>
             <span>sur l'ensemble de la population vaccinable</span>
         </h2>
@@ -267,6 +271,33 @@
 
 
 
+    <div class="container-graph">
+        <div>
+            <canvas id="graph"></canvas>
+        </div>
+
+        <div>
+            <canvas id="graph2"></canvas>
+        </div>
+        <div>
+            <canvas id="graph3"></canvas>
+        </div>
+        <div>
+            <canvas id="graph4"></canvas>
+        </div>
+        <div>
+            <canvas id="graph5"></canvas>
+        </div>
+
+        <div class="container-graph2">
+
+
+
+            <canvas id="shemaVacc"></canvas>
+
+        </div>
+
+    </div>
 
 
     <footer>

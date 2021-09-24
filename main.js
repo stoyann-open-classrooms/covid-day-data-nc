@@ -4,6 +4,8 @@ import { DataFetcher } from "./scripts/class/dataFetcher.js";
 const dataFatcher = new DataFetcher(DAILYDATA);
 const dataList = dataFatcher.getDataList(dataFatcher);
 
+// ============================================
+
 // dataList.dataList.forEach((el) => {
 //   console.log(el);
 // });
@@ -40,17 +42,212 @@ function displayTodayData() {
   hotelContainer.innerText = dataToday.hotel;
   totalDoseContainer.innerText = dataToday.getTotalInjectDay();
 }
+const shemaVAccToday = [
+  dataToday.statuVAccinalCasPositifs.nonVaccine,
+  dataToday.statuVAccinalCasPositifs.complet,
+  dataToday.statuVAccinalCasPositifs.uneDose,
+];
 
 const dataSetCas = dataList.getDatasetCas();
 const dataSetDeces = dataList.getDatasetDeces();
 const dataSetHospitalisation = dataList.getDatasetHospitalisation();
 const dataSetTotalDoseInjectDay = dataList.getDatasetTotalDoseInject();
-// console.log(dataSetCas);
-// console.log(dataSetDeces);
-// console.log(dataSetHospitalisation);
-// console.log(dataSetTotalDoseInjectDay);
+const dataSetDate = dataList.getDatasetDate();
+const dataSetReanimation = dataList.getDatasetReanimation();
+console.log(dataSetDate);
+console.log(dataSetCas);
+console.log(dataSetDeces);
+console.log(dataSetHospitalisation);
+console.log(dataSetTotalDoseInjectDay);
+console.log(dataSetReanimation);
 
 // ===========================================================================================
+
+const graph = document.getElementById("graph").getContext("2d");
+const graph2 = document.getElementById("graph2").getContext("2d");
+const graph3 = document.getElementById("graph3").getContext("2d");
+const graph4 = document.getElementById("graph4").getContext("2d");
+const graph5 = document.getElementById("graph5").getContext("2d");
+const shemaVacc = document.getElementById("shemaVacc").getContext("2d");
+let myChart = new Chart(graph, {
+  type: "line",
+  data: {
+    labels: dataSetDate,
+    datasets: [
+      {
+        label: "Cas positifs",
+        data: dataSetCas,
+        backgroundColor: "#7fa4e0",
+        hoverBorderWidth: 4,
+        hoverBackgroundColor: "#ff3939",
+        tension: 0.5,
+        borderColor: "tomato",
+      },
+    ],
+  },
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Nombre de nouveaux cas positifs",
+        color: "#7fa4e0",
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
+});
+let myChart2 = new Chart(graph2, {
+  type: "line",
+  data: {
+    labels: dataSetDate,
+    datasets: [
+      {
+        label: "Décès ",
+        data: dataSetDeces,
+        backgroundColor: "#7fa4e0",
+        hoverBorderWidth: 4,
+
+        hoverBackgroundColor: "#ff3939",
+        tension: 0.5,
+        borderColor: "tomato",
+      },
+    ],
+  },
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Nombre de décès par jour",
+        color: "#7fa4e0",
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
+});
+let myChart3 = new Chart(graph3, {
+  type: "line",
+  data: {
+    labels: dataSetDate,
+    datasets: [
+      {
+        label: "doses injectées",
+        data: dataSetTotalDoseInjectDay,
+        backgroundColor: "#7fa4e0",
+
+        hoverBorderWidth: 4,
+        hoverBackgroundColor: "#ff3939",
+        tension: 0.5,
+        borderColor: "tomato",
+      },
+    ],
+  },
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Nombre total de doses de vaccin injectées ",
+        color: "#7fa4e0",
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
+});
+let myChart4 = new Chart(graph4, {
+  type: "line",
+  data: {
+    labels: dataSetDate,
+    datasets: [
+      {
+        label: "personnes hospitalisé en unité COVID",
+        data: dataSetHospitalisation,
+        backgroundColor: "#7fa4e0",
+        hoverBorderWidth: 4,
+        hoverBackgroundColor: "#ff3939",
+        tension: 0.5,
+        borderColor: "tomato",
+        hoverBackgroundColor: "#ff3939",
+      },
+    ],
+  },
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Nombre de personnes hospitalisé en unité COVID",
+        color: "#7fa4e0",
+      },
+      legend: {
+        display: false,
+      },
+    },
+  },
+});
+let myChart5 = new Chart(graph5, {
+  type: "line",
+  data: {
+    labels: dataSetDate,
+    datasets: [
+      {
+        label: "personnes en réanimation",
+        data: dataSetReanimation,
+        backgroundColor: "#7fa4e0",
+
+        hoverBorderWidth: 4,
+        hoverBackgroundColor: "#ff3939",
+        hoverBackgroundColor: "#ff3939",
+        tension: 0.5,
+        borderColor: "tomato",
+      },
+    ],
+  },
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Nombre de personnes en réanimation",
+        color: "#7fa4e0",
+      },
+      legend: {
+        display: false,
+      },
+      layout: {
+        top: 100,
+      },
+    },
+  },
+});
+let myChart6 = new Chart(shemaVacc, {
+  type: "doughnut",
+  data: {
+    labels: ["non vacciné", "shéma vaccinal complet", "une dose"],
+
+    datasets: [
+      {
+        label: "Shéma vaccinal Cas positifs",
+        data: shemaVAccToday,
+        backgroundColor: ["#ff3939", "#68d9a4", "#fd772a"],
+        hoverOffset: 4,
+      },
+    ],
+  },
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: "Shéma vaccinal des cas positifs en %",
+      },
+      legend: {
+        display: true,
+      },
+    },
+  },
+});
 let burger = document.querySelector(".toggle");
 
 burger.addEventListener("click", () => {
