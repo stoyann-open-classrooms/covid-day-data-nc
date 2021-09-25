@@ -6,329 +6,38 @@
 @import "./SASS/header";
 @import "./SASS/cards";
 
-@import "./SASS/jauge";
-
-main {
-  width: 100%;
-  max-width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.active-link {
-  background-color: $green;
-}
-
-.banner-error {
-  width: 90%;
-}
-.title-index {
+.title-section {
   color: $green;
-  text-align: center;
   text-transform: uppercase;
-  font-size: 2rem;
-  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-}
-.container-error {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  height: 100vh;
-
-  a {
-    border: 2px white solid;
-    padding: 2rem;
-    margin-top: 3rem;
-    border-radius: 2rem;
-
-    &:hover {
-      background-color: $blue;
-      color: $dark;
-      border: 2px $dark solid;
-    }
-  }
-}
-
-footer {
-  font-size: 1.3rem;
-  background-color: rgba(99, 99, 212, 0.226);
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  p {
-    font-size: 1rem;
-    margin-left: 60px;
-  }
-}
-
-.page-content {
-  position: relative;
-  width: 80%;
-  margin-left: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // min-height: 100vh;
-  margin-top: 5rem;
   h2 {
-    font-size: 1.1rem;
     text-align: center;
-    width: 80%;
-    color: $green;
   }
-  .article {
-    background-color: rgb(216, 216, 216);
-    height: 400px;
-    color: $dark;
-    width: 80%;
-    border-radius: 2rem;
-    margin-bottom: 3rem;
-    transition: all 0.5s ease-out;
-    cursor: pointer;
-
-    .article-img {
-      background-color: grey;
-      height: auto;
-      width: 100%;
-      height: 30%;
-      .ar-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 2rem 2rem 0 0;
-      }
-    }
-    .article-sort {
-      font-size: 1rem;
-      color: $blue;
-
-      i {
-        margin-right: 1rem;
-      }
-    }
-
-    .article-body {
-      padding: 2rem;
-      font-size: 1rem;
-      line-height: 2.5rem;
-      strong {
-        font-size: 1.4rem;
-      }
-      h3 {
-        margin-bottom: 1rem;
-      }
-    }
+  small {
+    font-size: 1.5rem;
   }
 }
 
-.txt-articles {
-  font-size: 1.3rem;
-  line-height: 2rem;
-  width: 90%;
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-  h3 {
-    color: $green;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  @include bigPhone-and-higher {
-    margin-top: 2rem;
-  }
-
-  h1 {
-    line-height: 4rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    @include bigPhone-and-higher {
-      font-size: 2rem;
-    }
-  }
-
-  .question {
-    font-size: 2rem;
-    color: $green;
-    margin-bottom: 2rem;
-    font-weight: bolder;
-    line-height: 2.5rem;
-    margin-top: 2rem;
-  }
-
-  .reponses {
-    color: $dark;
-    background-color: white;
-    padding: 1.3rem;
-    border-radius: 1rem;
-    line-height: 2.5rem;
-    font-weight: bolder;
-    text-align: center;
-    margin: 10px 0;
-  }
-}
-
-.calendar {
-  width: 70%;
+#section-sannitaire {
   margin-top: 3rem;
-  margin-left: 20%;
 }
-.exemple {
-  margin: 2rem 0;
-  text-align: center;
-  font-size: 2rem;
-  color: $blue;
-}
-.bilan-dr {
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 2rem;
-  line-height: 3rem;
-  padding: 2rem;
-  border-radius: 2rem;
-  border: solid 2px $primary;
-}
-
-.text-continuite {
-  font-size: 1.5rem;
-  width: 90%;
-  span {
-    color: $primary;
-  }
-  h2 {
-    text-align: center;
-    color: $blue;
-    margin-bottom: 2rem;
-    border: 2px solid $blue;
-    border-radius: 2rem;
-    padding: 1rem;
-  }
-
-  li {
-    margin: 1rem 0;
-    line-height: 2rem;
-    margin: 2rem 0;
-
-    i {
-      margin-right: 0.8rem;
-      color: $green;
-    }
-  }
-}
-.jauge-container {
+#section-statistiques {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 3rem;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 5rem;
-  margin-top: 10rem;
+}
+.graph-container {
   width: 90%;
-  margin-left: 30px;
-  h2 {
-    margin-left: 2rem;
-    text-align: center;
-    margin-bottom: 3rem;
-    @include bigPhone-and-higher {
-      font-size: 1rem;
-    }
-  }
 }
 
-.btn-link {
-  display: block;
-  border: 2px $blue solid;
-  padding: 1rem;
-  width: 100%;
-  border-radius: 2rem;
-  margin: 2rem 0;
-  text-align: center;
-
-  &:hover {
-    background-color: $blue;
-  }
-}
-
-.btn-collect {
-  display: block;
-  border: 2px $blue solid;
-  padding: 1rem;
-  width: 80%;
-  border-radius: 2rem;
-  margin: 2rem 0;
-  text-align: center;
-  text-transform: uppercase;
-
-  &:hover {
-    background-color: $blue;
-  }
-}
-
-.list-ul {
-  font-size: 1.45rem;
-  width: 80%;
-  li {
-    margin: 1rem 0;
-  }
-  i {
-    color: $green;
-    margin-right: 1rem;
-    line-height: 2rem;
-  }
-}
-
-.title-h2 {
-  font-size: 1.45rem;
-  text-align: center;
-  color: $green;
-}
-
-.container-graph {
-  margin-left: 3.2rem;
-  width: 80%;
-  padding: 2rem;
-  margin-left: 60px;
-  color: #fff;
-  h2 {
-    margin-bottom: 2rem;
-    margin-left: 10px;
-  }
-  canvas {
-    margin: 2rem 0;
-  }
-}
-
-.container-graph2 {
-  z-index: 9999;
-  top: 0;
-  margin-left: 3.2rem;
-  width: 80%;
-  padding: 2rem;
-  margin-left: 60px;
-  color: #fff;
-  position: relative;
-}
-
-.content-square {
-  position: absolute;
-  bottom: -20px;
-  display: flex;
-  width: 80%;
-  justify-content: space-around;
-}
-.square {
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-}
-.square1 {
-  background-color: $primary;
-}
-.square2 {
-  background-color: $orange;
-}
-.square3 {
-  background-color: $green;
+.graph {
+  margin-top: 5rem;
 }

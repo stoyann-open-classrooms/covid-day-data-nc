@@ -17,294 +17,195 @@
 
 <body>
 
-    <nav class="naviguation">
-        <ul>
-            <li>
-                <a href="#" class="active-link">
-                    <span class="icone"><i class="fas fa-home"></i></span>
-                    <span class="title">Accueil</span>
-                </a>
-            </li>
-            <li>
-                <a href="./pages/actualite.html">
-                    <span class="icone"><i class="fas fa-newspaper"></i></span>
-                    <span class="title">Actualités</span>
-                </a>
-            </li>
-            <li>
-                <a href="./pages/economie.html">
-                    <span class="icone"><i class="fas fa-money-bill-wave"></i></span>
-                    <span class="title">Mesures d'aide économiques</span>
-                </a>
-            </li>
-            <li>
-                <a href="./pages/error.html">
-                    <span class="icone"><i class="fas fa-chart-bar"></i></span>
-                    <span class="title">Bilan Vaccinal</span>
-                </a>
 
-            </li>
-            <li>
-                <a href="./pages/oucefairvacc.html">
-                    <span class="icone"><i class="fas fa-syringe"></i></span>
-                    <span class="title">Où et comment se faire vacciner</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="./pages/error.html">
-                    <span class="icone"><i class="fas fa-vial"></i></span>
-                    <span class="title">Où et comment se faire tester</span>
-                </a>
-            </li>
-            <li>
-                <a href="./pages/statistiques.html">
-                    <span class="icone"><i class="fas fa-chart-pie"></i></span>
-                    <span class="title">Statistiques</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="./pages/continuite.html">
-                    <span class="icone"><i class="fas fa-graduation-cap"></i></span>
-                    <span class="title">Continuité pédagogique</span>
-                </a>
-            </li>
-
-        </ul>
-    </nav>
 
 
     <header>
-        <h1>Infos Coronavirus Nouvelle-calédonie</h1>
-        <div class="toggle"></div>
+        <h1>Infos Coronavirus <br> Nouvelle-calédonie</h1>
+        <!-- <div class="toggle"></div> -->
+        <nav class="naviguation">
+            <ul>
+                <li>
+                    <a href="#" class="active-link">
+                        <span class="icone"><i class="fas fa-home"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icone"><i class="fas fa-chart-bar"></i></span>
+
+                    </a>
+
+                </li>
+
+
+
+                <li>
+                    <a href="#">
+                        <span class="icone"><i class="fas fa-syringe"></i></span>
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <span class="icone"><i class="fas fa-info-circle"></i></span>
+                    </a>
+                </li>
+
+
+
+            </ul>
+        </nav>
     </header>
-
-
-
 
     <main>
 
-        <div class="container-cards">
+        <section id="section-sannitaire">
+            <div class="title-section">
+                <h2>Situation sanitaire</h2>
+                <small>Au 25/09/2021</small>
+            </div>
 
+            <div class="nb-de-cas-container">
+                <div class="mini-cards">
+                    <div class="mini-card-img-container"><img src="./src/icones/virus.png" alt=""></div>
+                    <div class="mini-cards-txt">
+                        <h3>cas positifs</h3>
+                        <div class="nb" id="nb_de_cas_total">
 
-
-            <h2 class="title-index">Point sannitaire et vaccinal <br><span> du 24.09.2021-10H</span>
-            </h2>
-            <div class="today-bilan-cards">
-                <div class=" card new-cases">
-                    <img src="./src/icones/virus.png" alt="">
-                    <h3>Nouveaux cas</h3>
-                    <p class="number" id="today-cas"></p>
-                    <small>dans les dernières 24h</small>
+                        </div>
+                        <p>Depuis le 06/07/09</p>
+                    </div>
                 </div>
-                <div class="active-cards">
-                    <h3>cas confirmés</h3>
-                    <p class="number" id="total-cas"></p>
-                    <small>depuis le 06/09/2021</small>
 
+                <div class="mini-cards">
+                    <div class="mini-card-img-container"><img src="./src/icones/virus.png" alt=""></div>
+                    <div class="mini-cards-txt">
+                        <h3>Nouveaux cas</h3>
+                        <div class="nb" id="nb_de_cas_today">
+
+                        </div>
+                        <p>En 24 heures</p>
+                    </div>
+                </div>
+                <div class="mini-cards">
+                    <div class="mini-card-img-container"><img src="./src/icones/ambulance.png" alt=""></div>
+                    <div class="mini-cards-txt">
+                        <h3>Hospitalisations</h3>
+                        <div class="nb" id="hospitalisation_today">
+
+                        </div>
+                        <p>En unité Covid</p>
+                    </div>
+                </div>
+                <div class="mini-cards">
+                    <div class="mini-card-img-container"><img src="./src/icones/bed.png" alt=""></div>
+                    <div class="mini-cards-txt">
+                        <h3>réanimations</h3>
+                        <div class="nb" id="reanimation_today">
+
+                        </div>
+                        <p>En unité Covid</p>
+                    </div>
+                </div>
+                <div class="mini-cards">
+                    <div class="mini-card-img-container"><img src="./src/icones/death.png" alt=""></div>
+                    <div class="mini-cards-txt">
+                        <h3>décès</h3>
+                        <div class="nb" id="deces_today">
+
+                        </div>
+                        <p>En 24 heures</p>
+                    </div>
+                </div>
+
+                <div class="mini-cards">
+                    <div class="mini-card-img-container"><img src="./src/icones/death.png" alt=""></div>
+                    <div class="mini-cards-txt">
+                        <h3>décès</h3>
+                        <div class="nb" id="deces_total">
+
+                        </div>
+                        <p>Depuis le 06/09/2021</p>
+                    </div>
+                </div>
+
+                <div class="mini-cards">
+                    <div class="mini-card-img-container"><img src="./src/icones/stayhome.png" alt=""></div>
+                    <div class="mini-cards-txt">
+                        <h3> hôtels</h3>
+                        <div class="nb" id="hotel_today">
+
+                        </div>
+                        <p>Personnes placées en hôtel</p>
+                    </div>
+                </div>
+                <div class="mini-cards">
+                    <div class="mini-card-img-container"><img src="./src/icones/cure.png" alt=""></div>
+                    <div class="mini-cards-txt">
+                        <h3>guérison</h3>
+                        <div class="nb" id="guerison_today">
+
+                        </div>
+                        <p>En 24 heures</p>
+                    </div>
                 </div>
 
             </div>
-            <div class="today-bilan-cards">
-                <div class=" card new-cases">
-                    <img src="./src/icones/bed.png" alt="">
 
-                    <h3>Réanimation</h3>
-                    <p class="number" id="reanimation"></p>
-                    <small>Service en saturation </small>
-                </div>
-                <div class="active-cards">
+        </section>
+        <section id="section-bilan-vaccinal">
 
-                    <p>En seulement <strong>24h</strong>, il a été consommé la quantité d’oxygène normalement utilisée
-                        en une semaine.
-                    </p>
+
+
+        </section>
+        <section id="section-statistiques">
+            <div class="graph evolution-nb-de-cas">
+                <div class="title-section">
+                    <h2>Evolution du nombre de cas positifs</h2>
+                    <small>Depuis le 06/09/2021</small>
 
                 </div>
-            </div>
-            <div class="today-bilan-cards">
-                <div class=" card new-cases">
-                    <img src="./src/icones/death.png" alt="">
-                    <h3>Décès</h3>
-                    <p class="number" id="today-deces"></p>
-                    <small>dans les dernières 24h</small>
-                </div>
-                <div class="active-cards">
-                    <h3>décès</h3>
-                    <p class="number" id="total-deces"></p>
-                    <small>depuis le 09/09/2021 le plus jeune avait 41 ans</small>
+                <div class="graph-container">
+                    <canvas id="graph-nb-de-cas"></canvas>
                 </div>
             </div>
-            <div class="today-bilan-cards">
-                <div class=" card new-cases">
-                    <img src="./src/icones/ambulance.png" alt="">
-
-                    <h3>Hospitalisations</h3>
-                    <p class="number" id="hospitalisation"></p>
-                    <small>Personnes en unité COVID </small>
+            <div class="graph evolution-nb-de-deces">
+                <div class="title-section">
+                    <h2>Evolution du nombre de décès</h2>
+                    <small>Depuis le 06/09/2021</small>
                 </div>
-                <div class="active-cards">
-
-                    <p><strong>3/4</strong> d'entre eux ne sont pas
-                        vaccinés. - - Quelques enfants hopitalisé</p>
-
+                <div class="graph-container">
+                    <canvas id="graph-nb-de-deces"></canvas>
                 </div>
             </div>
+            <div class="graph evolution-nb-de-hospitalisation">
+                <div class="title-section">
+                    <h2>Evolution du nombre d'hospitalisations</h2>
+                    <small>Depuis le 06/09/2021</small>
 
-            <div class="today-bilan-cards">
-                <div class=" card new-cases">
-                    <img src="./src/icones/cure.png" alt="">
-                    <h3> Guérison</h3>
-                    <p class="number" id="guerison"></p>
-                    <small></small>
                 </div>
-                <div class="active-cards">
-                    <p>Certains patients sont en voie de guérison et sortis de réanimation. <br>
-                        <strong>Ils sont tous vaccinés</strong>
-                    </p>
+                <div class="graph-container">
+                    <canvas id="graph-nb-de-hospitalisations"></canvas>
+                </div>
+            </div>
+            <div class="graph evolution-nb-de-hospitalisation">
+                <div class="title-section">
+                    <h2>Evolution du nombre de personnes en réanimation</h2>
+                    <small>Depuis le 06/09/2021</small>
 
+                </div>
+                <div class="graph-container">
+                    <canvas id="graph-nb-de-reanimations"></canvas>
                 </div>
             </div>
 
 
-
-            <div class="today-bilan-cards">
-                <div class=" card new-cases">
-                    <img src="./src/icones/dose3.png" alt="">
-
-                    <h3>Vaccination</h3>
-                    <p class="number" id="total-dose-inject"></p>
-                    <small>
-                        Doses injectées <br></small>
-                </div>
-                <div class="active-cards">
-                    <ul class="list-hotel">
-                        <li>Première dose: <strong id="first-dose"></strong> </li>
-                        <li>Seconde dose: <strong id="second-dose"></strong></li>
-                        <li>Troisième dose : <strong id="third-dose"></strong> </li>
-                    </ul>
-
-
-                </div>
-            </div>
-            <div class="today-bilan-cards">
-                <div class=" card new-cases">
-                    <i class="fas fa-hotel"></i>
-
-                    <h3>Occupation des <br> hôtels</h3>
-                    <p class="number" id="hotel"></p>
-                    <small>
-                        personnes environ en hôtel</small>
-                </div>
-                <!-- <div class="active-cards">
-                    <ul class="list-hotel">Places disponibles :
-                        <li>Province Sud : <strong>94</strong> </li>
-                        <li>Province des îles : <strong>108</strong></li>
-                        <li>Province Nord : <strong>87</strong> </li>
-                    </ul>
-
-                </div> -->
-            </div>
-
-
-
-
-
-
-
+        </section>
     </main>
 
-    <div class="jauge-container">
-
-        <h2 class="title-h2">Avancement de la vaccination - Au 21.09.2021<br>
-            <span>sur l'ensemble de la population vaccinable</span>
-        </h2>
-        <div class="dose-nb">Une dose <img src="./src/icones/dose1.png" alt=""> </div>
-
-        <div class="pie">
-            <svg>
-                <circle fill="red" r="30%" cx="50%" cy="50%" />
-            </svg>
-            <div class="nb"></div>
-        </div>
-
-        <div class="dose-nb">Deux doses <img src="./src/icones/dose2.png" alt=""> </div>
-        <div class="pie">
-            <svg>
-                <circle class="circle2" fill="red" r="30%" cx="50%" cy="50%" />
-            </svg>
-            <div class="nb2"></div>
-        </div>
-
-
-        <h2 class="title-index">Statut vaccinal des <br> cas positifs</h2>
-
-        <div class="pie">
-            <svg>
-                <circle class="circle3" fill="red" r="30%" cx="50%" cy="50%" />
-            </svg>
-            <div class="nb3"></div>
-            <div class="infoa">Non vacciné </div>
-        </div>
-
-        <div class="pie">
-            <svg>
-                <circle class="circle4" fill="red" r="30%" cx="50%" cy="50%" />
-            </svg>
-            <div class="nb4"></div>
-            <div class="infov">Shéma vaccinal <br> complet</div>
-        </div>
-
-
-        <div class="pie">
-            <svg>
-                <circle class="circle5" fill="red" r="30%" cx="50%" cy="50%" />
-            </svg>
-            <div class="nb5"></div>
-            <div class="infoc">une dose <br> </div>
-
-
-        </div>
-
-
-    </div>
-
-
-
-    <div class="container-graph">
-        <div>
-            <canvas id="graph"></canvas>
-        </div>
-
-        <div>
-            <canvas id="graph2"></canvas>
-        </div>
-        <div>
-            <canvas id="graph3"></canvas>
-        </div>
-        <div>
-            <canvas id="graph4"></canvas>
-        </div>
-        <div>
-            <canvas id="graph5"></canvas>
-        </div>
-
-        <div class="container-graph2">
-
-
-
-            <canvas id="shemaVacc"></canvas>
-
-        </div>
-
-    </div>
-
-
-    <footer>
-        <p>Les données inscrites proviennent du <br><a href="https://gouv.nc/">Gouvernement de La Nouvelle-Calédonie</a>
-        </p>
-
-    </footer>
 
 
 

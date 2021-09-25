@@ -1,84 +1,43 @@
-.today-bilan-cards {
-  color: $dark;
-  margin: 2rem 0;
-  background-color: white;
-  flex-direction: column;
-  height: 180px;
-  padding: 1rem;
-  border-radius: 20px;
-  position: relative;
-  max-width: 600px;
-  width: 100%;
-  i,
-  img {
-    font-size: 3rem;
-    margin-left: 0%;
-    margin-bottom: 2rem;
-    color: $blue;
-    text-align: center;
-    width: 7rem;
-    margin-bottom: 2rem;
-  }
-}
-
-.container-cards {
+.nb-de-cas-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
   flex-wrap: wrap;
-  width: 75%;
-  margin-left: 60px;
-  margin-top: 2rem;
-  transition: all 0.3s ease-out;
+}
 
-  margin-bottom: 5rem;
-  @include bigPhone-and-higher {
-    flex-direction: column;
+.mini-cards {
+  background-color: white;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem 0;
+  color: $dark;
+  width: 300px;
+  padding: 1rem;
+  border-radius: 0 1rem 1rem 0;
+  border-left: $blue 1rem solid;
+  .nb {
+    color: $primary;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  p {
+    text-align: center;
   }
 }
 
-.card {
-  position: absolute;
-  bottom: 10%;
+.mini-card-img-container {
+  width: 60%;
+  img {
+    width: 50%;
+  }
 }
 
-.number {
-  font-size: 3rem;
-  color: $primary;
-  font-weight: bolder;
-}
-
-.active-cards {
+.mini-cards-txt {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position: absolute;
-  background-color: whitesmoke;
-  border-radius: 3rem;
-  height: 100%;
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  text-align: center;
-  cursor: pointer;
-  transition: opacity 0.4s ease-out;
-
-  p {
-    width: 80%;
-  }
-}
-
-.list-hotel {
-  font-size: 1rem;
-  font-weight: bolder;
-
-  li {
-    font-weight: normal;
-    margin-top: 1rem;
-    font-size: 1rem;
-    strong {
-      color: $primary;
-    }
+  h3 {
+    text-transform: uppercase;
   }
 }

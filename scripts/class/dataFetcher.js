@@ -11,8 +11,8 @@ export class DataFetcher {
     for (let dayli of this.data) {
       dataList.push(
         new DailyData(
-          dayli.id,
           dayli.date,
+          dayli.confinement,
           dayli.cas,
           dayli.hospitalise,
           dayli.reanimation,

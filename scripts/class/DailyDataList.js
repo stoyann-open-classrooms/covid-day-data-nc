@@ -8,68 +8,60 @@ export class DailyDataList {
     this.dataList.forEach((element) => {
       totalDeces = totalDeces + element.deces;
     });
-    console.log(` ${totalDeces} décès depuis le 6.09.2021`);
     return totalDeces;
   }
 
-  getTotalCas() {
-    let totalCas = 0;
-    this.dataList.forEach((element) => {
-      totalCas = totalCas + element.cas;
-    });
-    console.log(` ${totalCas} cas depuis le 6.09.2021`);
-    return totalCas;
+  getTodayCas() {
+    let today = this.dataList[this.dataList.length - 1].cas;
+    let yesterday = this.dataList[this.dataList.length - 2].cas;
+    let nbDeCasToday = today - yesterday;
+    return nbDeCasToday;
   }
 
-  getDatasetCas() {
-    const dataSetCase = [];
+  getAllDate() {
+    let allDay = [];
     this.dataList.forEach((el) => {
-      dataSetCase.push(el.cas);
+      if (el.cas >= 139) {
+        allDay.push(el.date);
+      }
     });
-    return dataSetCase;
+    return allDay;
+  }
+  getAllCasByDate() {
+    let allCas = [];
+    this.dataList.forEach((el) => {
+      if (el.cas >= 139) {
+        allCas.push(el.cas);
+      }
+    });
+    return allCas;
   }
 
-  getDatasetDeces() {
-    const dataSetDeces = [];
+  getAllDecesByDate() {
+    let allDeces = [];
     this.dataList.forEach((el) => {
-      dataSetDeces.push(el.deces);
+      if (el.cas >= 139) {
+        allDeces.push(el.deces);
+      }
     });
-    return dataSetDeces;
+    return allDeces;
   }
-
-  getDatasetDate() {
-    const dataSetDate = [];
+  getAllHospitalisationsByDate() {
+    let allHospitalisation = [];
     this.dataList.forEach((el) => {
-      dataSetDate.push(el.date);
+      if (el.cas >= 139) {
+        allHospitalisation.push(el.hospitalise);
+      }
     });
-    return dataSetDate;
+    return allHospitalisation;
   }
-
-  getDatasetHospitalisation() {
-    const dataSetHospitalisation = [];
+  getAllReanimationsByDate() {
+    let allReanimation = [];
     this.dataList.forEach((el) => {
-      dataSetHospitalisation.push(el.hospitalise);
+      if (el.cas >= 139) {
+        allReanimation.push(el.reanimation);
+      }
     });
-    return dataSetHospitalisation;
-  }
-
-  getDatasetReanimation() {
-    const dataSetReanimation = [];
-    this.dataList.forEach((el) => {
-      dataSetReanimation.push(el.reanimation);
-    });
-    return dataSetReanimation;
-  }
-
-  getDatasetTotalDoseInject() {
-    const dataSetTotalDoseInject = [];
-    this.dataList.forEach((el) => {
-      dataSetTotalDoseInject.push(
-        el.dosesInjecteesDuJour.first +
-          el.dosesInjecteesDuJour.second +
-          el.dosesInjecteesDuJour.third
-      );
-    });
-    return dataSetTotalDoseInject;
+    return allReanimation;
   }
 }

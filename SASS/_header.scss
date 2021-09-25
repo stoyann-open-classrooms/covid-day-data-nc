@@ -1,25 +1,59 @@
 header {
   background: $blue;
-  height: 12.4vh;
+  height: 13rem;
   width: 100%;
+
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   align-items: center;
-  position: relative;
 
   h1 {
     text-transform: uppercase;
-    font-size: 1.5rem;
-    width: 60%;
-    position: absolute;
-    top: 10%;
-    line-height: 2rem;
-    left: 6.4rem;
-    @include bigPhone-and-higher {
-    }
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+
+    line-height: 3rem;
   }
-  img {
-    width: 20rem;
+}
+.naviguation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // overflow: hidden;
+
+  width: 100%;
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      width: 100%;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+
+      a {
+        display: block;
+        display: flex;
+        text-align: center;
+        i {
+          font-size: 2.6rem;
+          position: relative;
+          display: block;
+          min-width: 60px;
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+        }
+        &:hover {
+          color: $green;
+        }
+      }
+    }
   }
 }
