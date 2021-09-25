@@ -27,8 +27,11 @@
 }
 
 #section-sannitaire {
-  margin-top: 4rem;
-  height: 85vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
 }
 #section-statistiques {
   display: flex;
@@ -60,6 +63,7 @@
   flex-direction: column;
   align-items: center;
   font-size: 1.3rem;
+
   p {
     text-align: center;
     margin: 2rem 0;
@@ -80,42 +84,9 @@
   margin-top: 5rem;
 }
 
-footer {
-  height: auto;
-  background: rgba(88, 88, 175, 0.137);
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  padding: 1rem;
-
-  font-size: 1rem;
-  margin-top: 5rem;
-  .footer-txt {
-    margin: 20px 0;
-    width: 100%;
-    p {
-      text-align: center;
-      margin: 1rem 0;
-    }
-  }
-
-  .footer-link {
-    text-transform: uppercase;
-
-    margin: 1rem 0;
-    transition: all 0.4s ease-out;
-    i {
-      margin-right: 0.5rem;
-    }
-    &:hover {
-      color: $green;
-    }
-  }
-}
-
 .big-title {
-  margin-top: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   letter-spacing: 1px;
   width: 80%;
   color: $blue;
@@ -127,4 +98,23 @@ footer {
   padding: 1rem;
   border-radius: 3rem;
   font-weight: bolder;
+}
+
+.logo-content {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  ul {
+    text-align: center;
+    li {
+      text-transform: uppercase;
+      margin: 1rem 0;
+      font-size: 1rem;
+      &:hover {
+        color: $green;
+      }
+    }
+  }
 }
