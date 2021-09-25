@@ -98,6 +98,7 @@ header {
   background: #7fa4e0;
   height: 13rem;
   width: 100%;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,6 +295,36 @@ header h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  padding: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3rem;
+}
+
+#info p {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#info p a {
+  display: block;
+  margin: 1rem 0;
+}
+
+#info p a i {
+  margin-right: 1rem;
 }
 
 .graph-container {
