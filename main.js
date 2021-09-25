@@ -13,6 +13,7 @@ let dataToday = dataList.dataList[dataList.dataList.length - 1];
 console.log(dataList.getTotalDeces());
 console.log(dataList.getTodayCas());
 displayData();
+displayGraph();
 
 // ==================== affichage des données ===================
 
@@ -38,139 +39,142 @@ function displayData() {
   nbHotelTotalContainer.innerText = dataToday.hotel;
   nbGuerisonTotalContainer.innerText = dataToday.guerison;
 }
+// ==================== affichage des graphiques ===================
 
-let dataSet = dataList.getAllDate();
-let dataSetCas = dataList.getAllCasByDate();
-let dataSetDeces = dataList.getAllDecesByDate();
-let dataSetHospitalisations = dataList.getAllHospitalisationsByDate();
-let dataSetReanimation = dataList.getAllReanimationsByDate();
-const graphNbDeCas = document
-  .getElementById("graph-nb-de-cas")
-  .getContext("2d");
-const graphNbDeDeces = document
-  .getElementById("graph-nb-de-deces")
-  .getContext("2d");
-const graphNbDeHospitalisations = document
-  .getElementById("graph-nb-de-hospitalisations")
-  .getContext("2d");
-const graphNbDeReanimation = document
-  .getElementById("graph-nb-de-reanimations")
-  .getContext("2d");
-let chartNbDeCas = new Chart(graphNbDeCas, {
-  type: "line",
-  data: {
-    labels: dataSet,
-    datasets: [
-      {
-        label: "Décès",
-        data: dataSetCas,
-        backgroundColor: "#7fa4e0",
-        hoverBorderWidth: 4,
-        hoverBackgroundColor: "#ff3939",
-        tension: 0.5,
-        borderColor: "#ff3939",
-      },
-    ],
-  },
-  options: {
-    plugins: {
-      title: {
-        display: true,
+function displayGraph() {
+  let dataSet = dataList.getAllDate();
+  let dataSetCas = dataList.getAllCasByDate();
+  let dataSetDeces = dataList.getAllDecesByDate();
+  let dataSetHospitalisations = dataList.getAllHospitalisationsByDate();
+  let dataSetReanimation = dataList.getAllReanimationsByDate();
+  const graphNbDeCas = document
+    .getElementById("graph-nb-de-cas")
+    .getContext("2d");
+  const graphNbDeDeces = document
+    .getElementById("graph-nb-de-deces")
+    .getContext("2d");
+  const graphNbDeHospitalisations = document
+    .getElementById("graph-nb-de-hospitalisations")
+    .getContext("2d");
+  const graphNbDeReanimation = document
+    .getElementById("graph-nb-de-reanimations")
+    .getContext("2d");
+  let chartNbDeCas = new Chart(graphNbDeCas, {
+    type: "line",
+    data: {
+      labels: dataSet,
+      datasets: [
+        {
+          label: "Décès",
+          data: dataSetCas,
+          backgroundColor: "#7fa4e0",
+          hoverBorderWidth: 4,
+          hoverBackgroundColor: "#ff3939",
+          tension: 0.5,
+          borderColor: "#ff3939",
+        },
+      ],
+    },
+    options: {
+      plugins: {
+        title: {
+          display: true,
 
-        color: "#7fa4e0",
-      },
-      legend: {
-        display: false,
+          color: "#7fa4e0",
+        },
+        legend: {
+          display: false,
+        },
       },
     },
-  },
-});
+  });
 
-let chartNbDeDeces = new Chart(graphNbDeDeces, {
-  type: "line",
-  data: {
-    labels: dataSet,
-    datasets: [
-      {
-        label: "Cas positifs",
-        data: dataSetDeces,
-        backgroundColor: "#7fa4e0",
-        hoverBorderWidth: 4,
-        hoverBackgroundColor: "#ff3939",
-        tension: 0.5,
-        borderColor: "#ff3939",
-      },
-    ],
-  },
-  options: {
-    plugins: {
-      title: {
-        display: true,
+  let chartNbDeDeces = new Chart(graphNbDeDeces, {
+    type: "line",
+    data: {
+      labels: dataSet,
+      datasets: [
+        {
+          label: "Cas positifs",
+          data: dataSetDeces,
+          backgroundColor: "#7fa4e0",
+          hoverBorderWidth: 4,
+          hoverBackgroundColor: "#ff3939",
+          tension: 0.5,
+          borderColor: "#ff3939",
+        },
+      ],
+    },
+    options: {
+      plugins: {
+        title: {
+          display: true,
 
-        color: "#7fa4e0",
-      },
-      legend: {
-        display: false,
+          color: "#7fa4e0",
+        },
+        legend: {
+          display: false,
+        },
       },
     },
-  },
-});
+  });
 
-let chartNbDeHospitalisations = new Chart(graphNbDeHospitalisations, {
-  type: "line",
-  data: {
-    labels: dataSet,
-    datasets: [
-      {
-        label: "Cas positifs",
-        data: dataSetHospitalisations,
-        backgroundColor: "#7fa4e0",
-        hoverBorderWidth: 4,
-        hoverBackgroundColor: "#ff3939",
-        tension: 0.5,
-        borderColor: "#ff3939",
-      },
-    ],
-  },
-  options: {
-    plugins: {
-      title: {
-        display: true,
+  let chartNbDeHospitalisations = new Chart(graphNbDeHospitalisations, {
+    type: "line",
+    data: {
+      labels: dataSet,
+      datasets: [
+        {
+          label: "Cas positifs",
+          data: dataSetHospitalisations,
+          backgroundColor: "#7fa4e0",
+          hoverBorderWidth: 4,
+          hoverBackgroundColor: "#ff3939",
+          tension: 0.5,
+          borderColor: "#ff3939",
+        },
+      ],
+    },
+    options: {
+      plugins: {
+        title: {
+          display: true,
 
-        color: "#7fa4e0",
-      },
-      legend: {
-        display: false,
+          color: "#7fa4e0",
+        },
+        legend: {
+          display: false,
+        },
       },
     },
-  },
-});
-let chartNbDeReanimation = new Chart(graphNbDeReanimation, {
-  type: "line",
-  data: {
-    labels: dataSet,
-    datasets: [
-      {
-        label: "Décès",
-        data: dataSetReanimation,
-        backgroundColor: "#7fa4e0",
-        hoverBorderWidth: 4,
-        hoverBackgroundColor: "#ff3939",
-        tension: 0.5,
-        borderColor: "#ff3939",
-      },
-    ],
-  },
-  options: {
-    plugins: {
-      title: {
-        display: true,
+  });
+  let chartNbDeReanimation = new Chart(graphNbDeReanimation, {
+    type: "line",
+    data: {
+      labels: dataSet,
+      datasets: [
+        {
+          label: "Décès",
+          data: dataSetReanimation,
+          backgroundColor: "#7fa4e0",
+          hoverBorderWidth: 4,
+          hoverBackgroundColor: "#ff3939",
+          tension: 0.5,
+          borderColor: "#ff3939",
+        },
+      ],
+    },
+    options: {
+      plugins: {
+        title: {
+          display: true,
 
-        color: "#7fa4e0",
-      },
-      legend: {
-        display: false,
+          color: "#7fa4e0",
+        },
+        legend: {
+          display: false,
+        },
       },
     },
-  },
-});
+  });
+}
