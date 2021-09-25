@@ -36,7 +36,7 @@ function displayData() {
   nbDeCasReanimationContainer.innerText = dataToday.reanimation;
   nbDeDecesTodayContainer.innerText = dataToday.deces;
   nbDeDecesTotalContainer.innerText = dataList.getTotalDeces();
-  nbHotelTotalContainer.innerText = dataToday.hotel.total;
+  nbHotelTotalContainer.innerText = dataToday.hotel;
   nbGuerisonTotalContainer.innerText = dataToday.guerison;
 }
 // ==================== affichage des graphiques ===================

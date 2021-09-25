@@ -42,6 +42,58 @@ li {
   }
 }
 
+@-webkit-keyframes apparitionCards {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes apparitionCards {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes apparitionTitle {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes apparitionTitle {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
 header {
   background: #7fa4e0;
   height: 13rem;
@@ -155,6 +207,8 @@ header h1 {
   padding: 1rem;
   border-radius: 0 1rem 1rem 0;
   border-left: #7fa4e0 1rem solid;
+  -webkit-animation: apparitionCards 1.2s ease-out;
+          animation: apparitionCards 1.2s ease-out;
 }
 
 .mini-cards .nb {
@@ -212,6 +266,8 @@ header h1 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  -webkit-animation: apparitionTitle 1s ease-out;
+          animation: apparitionTitle 1s ease-out;
 }
 
 .title-section h2 {
@@ -274,10 +330,6 @@ footer .footer-txt {
 footer .footer-txt p {
   text-align: center;
   margin: 1rem 0;
-}
-
-footer .footer-txt p a {
-  margin-top: 1rem;
 }
 
 footer .footer-link {
