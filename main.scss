@@ -2,6 +2,7 @@
 @import "./SASS/reset";
 @import "./SASS/animation";
 @import "./SASS/mixins";
+
 @import "./SASS/header";
 @import "./SASS/cards";
 
@@ -26,13 +27,30 @@
 }
 
 #section-sannitaire {
-  margin-top: 3rem;
+  margin-top: 4rem;
+  height: 85vh;
 }
 #section-statistiques {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
   flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+#section-bilan-vaccinal {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .pie-container {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 #info {
@@ -94,4 +112,19 @@ footer {
       color: $green;
     }
   }
+}
+
+.big-title {
+  margin-top: 2rem;
+  letter-spacing: 1px;
+  width: 80%;
+  color: $blue;
+  text-transform: uppercase;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 3rem;
+  font-weight: bolder;
 }

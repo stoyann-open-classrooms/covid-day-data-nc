@@ -12,9 +12,11 @@
   margin: 1rem 0;
   color: $dark;
   width: 300px;
+  cursor: pointer;
   padding: 1rem;
   border-radius: 0 1rem 1rem 0;
   border-left: $blue 1rem solid;
+  box-shadow: -3px -5px 10px 0px rgba(255, 255, 255, 0.3);
   animation: apparitionCards 1.2s ease-out;
   .nb {
     color: $primary;

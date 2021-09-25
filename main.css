@@ -96,7 +96,7 @@ li {
 
 header {
   background: #7fa4e0;
-  height: 13rem;
+  height: 100vh;
   width: 100%;
   top: 0;
   display: -webkit-box;
@@ -118,9 +118,9 @@ header {
 header h1 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-top: 1rem;
-  line-height: 3rem;
+  line-height: 4rem;
 }
 
 .naviguation {
@@ -133,6 +133,7 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 10rem;
   width: 100%;
 }
 
@@ -158,6 +159,18 @@ header h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.naviguation ul li small {
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .naviguation ul li a {
@@ -205,9 +218,12 @@ header h1 {
   margin: 1rem 0;
   color: #1d1d1d;
   width: 300px;
+  cursor: pointer;
   padding: 1rem;
   border-radius: 0 1rem 1rem 0;
   border-left: #7fa4e0 1rem solid;
+  -webkit-box-shadow: -3px -5px 10px 0px rgba(255, 255, 255, 0.3);
+          box-shadow: -3px -5px 10px 0px rgba(255, 255, 255, 0.3);
   -webkit-animation: apparitionCards 1.2s ease-out;
           animation: apparitionCards 1.2s ease-out;
 }
@@ -280,7 +296,8 @@ header h1 {
 }
 
 #section-sannitaire {
-  margin-top: 3rem;
+  margin-top: 4rem;
+  height: 85vh;
 }
 
 #section-statistiques {
@@ -290,11 +307,39 @@ header h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 3rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+
+#section-bilan-vaccinal {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#section-bilan-vaccinal .pie-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 #info {
@@ -376,5 +421,26 @@ footer .footer-link i {
 
 footer .footer-link:hover {
   color: #68d9a4;
+}
+
+.big-title {
+  margin-top: 2rem;
+  letter-spacing: 1px;
+  width: 80%;
+  color: #7fa4e0;
+  text-transform: uppercase;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  border-radius: 3rem;
+  font-weight: bolder;
 }
 /*# sourceMappingURL=main.css.map */
