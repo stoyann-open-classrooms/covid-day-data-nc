@@ -64,4 +64,13 @@ export class DailyDataList {
     });
     return allReanimation;
   }
+  getAllguerisonByDate() {
+    let allguerison = [];
+    this.dataList.forEach((el) => {
+      if (el.cas >= 139) {
+        allguerison.push(el.guerison);
+      }
+    });
+    return allguerison;
+  }
 }

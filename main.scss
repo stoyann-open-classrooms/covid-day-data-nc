@@ -7,7 +7,7 @@
 @import "./SASS/cards";
 
 .title-section {
-  color: $green;
+  color: $blue;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -40,4 +40,41 @@
 
 .graph {
   margin-top: 5rem;
+}
+
+footer {
+  height: auto;
+  background: rgba(88, 88, 175, 0.137);
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding: 1rem;
+
+  font-size: 1rem;
+  margin-top: 5rem;
+  .footer-txt {
+    margin: 20px 0;
+    width: 100%;
+    p {
+      text-align: center;
+      margin: 1rem 0;
+      a {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .footer-link {
+    text-transform: uppercase;
+
+    margin: 1rem 0;
+    transition: all 0.4s ease-out;
+    i {
+      margin-right: 0.5rem;
+    }
+    &:hover {
+      color: $green;
+    }
+  }
 }

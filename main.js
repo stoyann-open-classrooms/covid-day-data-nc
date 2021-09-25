@@ -36,7 +36,7 @@ function displayData() {
   nbDeCasReanimationContainer.innerText = dataToday.reanimation;
   nbDeDecesTodayContainer.innerText = dataToday.deces;
   nbDeDecesTotalContainer.innerText = dataList.getTotalDeces();
-  nbHotelTotalContainer.innerText = dataToday.hotel;
+  nbHotelTotalContainer.innerText = dataToday.hotel.total;
   nbGuerisonTotalContainer.innerText = dataToday.guerison;
 }
 // ==================== affichage des graphiques ===================
@@ -47,6 +47,7 @@ function displayGraph() {
   let dataSetDeces = dataList.getAllDecesByDate();
   let dataSetHospitalisations = dataList.getAllHospitalisationsByDate();
   let dataSetReanimation = dataList.getAllReanimationsByDate();
+  let dataSetguerison = dataList.getAllguerisonByDate();
   const graphNbDeCas = document
     .getElementById("graph-nb-de-cas")
     .getContext("2d");
